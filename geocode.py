@@ -79,5 +79,5 @@ class GetGeo():
                 existing_data = []
             existing_data.append(response)
             with open(filepath, 'w') as file:
-                json.dump(existing_data, file, indent=4)
+                json.dump(existing_data, file, indent=4, ensure_ascii=False)
         return response
