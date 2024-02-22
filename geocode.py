@@ -77,7 +77,7 @@ class GetGeo():
                     existing_data = json.load(file)
             except (FileNotFoundError, JSONDecodeError):
                 existing_data = []
-            existing_data.append(data)
+            existing_data.append(response)
             with open(filepath, 'w') as file:
                 json.dump(existing_data, file, indent=4)
         return response

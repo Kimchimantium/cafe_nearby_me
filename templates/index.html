@@ -13,7 +13,7 @@
     <div class="container">
         <div class="container text-success bg-light">
             <div class="custom-text-color">
-                <h1>Cafe Finder</h1>
+                <h1 class="display-1">Cafe Finder</h1>
             </div>
             <div class="text-warning">
                 <h2>Find Mega Coffee Near Me</h2>
@@ -51,11 +51,12 @@
                 <th scope="col">Rating</th>
             </tr>
             </thead>
-            {% if result is not none %}
-            {% for place in result %}
+            {% if results is not none %}
+            {% for place in results %}
             <tbody>
             <td>
                 <h5 class="font-weight-bold">{{ place['name'] }}</h5>
+                <small class="text-muted">place['']</small>
             </td>
             <td>
                 <h6 class="text-danger">Rating = {{place['rating'] }}</h6>

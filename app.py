@@ -49,11 +49,13 @@ class CafeForm(FlaskForm):
                                 ('gas_Station', 'Gas Station'), ('supermarket', 'Supermarket')],
                        render_kw={'class': 'form-control'})
     keyword = StringField(label="Place Keyword",
-                          render_kw={"placeholder": '메가커피',
+                          default='메가커피',
+                          render_kw={"placeholder": 'Keyword of the Place',
                                      'class': 'form-control'})
     radius = IntegerField(label='Radius in m²',
+                          default=1000,
                           validators=[validators.DataRequired()],
-                          render_kw={'placeholder': '500',
+                          render_kw={'placeholder': 'In m²',
                                      'class': 'form-control'})
     submit = SubmitField(label='Find',
                          render_kw={'class': 'btn btn-warning form-control'})
@@ -80,30 +82,20 @@ def home():
         print(f"{location}, {type_}, {keyword}, {radius}")
         gg = GetGeo()
         result = gg.by_geo(type_=type_, keyword=keyword, address=location, radius=radius, save=True)
-        result = result['results']
+        results = result['results']
         print(f"result: {result}")
+        for result in results:
+            pprint(result['rating'])
     return render_template('index.html',
                            form=form,
                            location=location,
                            key=key,
-                           result=result)
+                           results=results)
 
 
-@app.route('/findcafes', methods=['GET'])
+@app.route('/find_cafes', methods=['GET'])
 def find_cafes():
-    radius = 500
-    type = 'cafe'
-    location = '경기도 성남시 분당구 서현동'
-    lat_long = gg.get_lat_long(location)
-    print(f"location: {location}, lat_long: {lat_long}")
-    key = os.getenv('GOOGLE_API_KEY')
-    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat_long[0]},{lat_long[1]}&radius={radius}&type={type}&key={key}"
-    print(url)
-    response = requests.get(url)
-    if response.status_code == 200:
-        return jsonify(response.json())
-    else:
-        return jsonify({"error": "Failed to fetch data from Google Places API"}), response.status_code
+    pass
 
 
 if __name__ == '__main__':
