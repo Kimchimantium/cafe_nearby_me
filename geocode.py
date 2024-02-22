@@ -33,7 +33,6 @@ class GetGeo():
                 try:
                     with open(filepath, 'r') as file:
                         existing_data = json.load(file)
-                        print(f"existing_data: {existing_data}")
                 except (FileNotFoundError, JSONDecodeError):
                     existing_data = []
                 existing_data.append(data)
@@ -64,10 +63,10 @@ class GetGeo():
                 'radius': radius,
                 'type': type_,
                 'key': self.key,
-                'keyword': keyword
+                'keyword': keyword,
+                'language': 'ko'
             }
             response = requests.get(url=self.url_nearby, params=params).json()
-            print(response)
         except IndexError:
             response = {'results': []}
 

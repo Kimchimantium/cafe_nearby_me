@@ -1,10 +1,11 @@
 {% extends 'bootstrap/base.html' %}
 {% import "bootstrap/wtf.html" as wtf %}
 {% block head %}
-<!-- This is where you include your stylesheet -->
+<!-- Styles -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<script src="https://kit.fontawesome.com/43848acd7b.js" crossorigin="anonymous"></script>
 {% endblock %}
 
 {% block content %}
@@ -13,36 +14,43 @@
     <div class="container">
         <div class="container text-success bg-light">
             <div class="custom-text-color">
-                <h1 class="display-1">Cafe Finder</h1>
+                <h1 class="display-1">MyPresso</h1>
             </div>
             <div class="text-warning">
-                <h2>Find Mega Coffee Near Me</h2>
+                <h2>My Coffee Place List</h2>
             </div>
         </div>
         <div class="container bg-light">
-            <form method="POST">
+            <form method="POST" novalidate>
                 {{ form.hidden_tag() }}
                 <div class="form-group">
                     {{ form.location.label }}
+                    <small class="form-text text-muted indent-small">address of the place</small>
                     {{ form.location() }}
-                    <small class="form-text text-muted">address of the place</small>
+
                 </div>
                 <div class="form-group">
                     {{ form.type.label }}
+                    <small class="form-text text-muted indent-small">Address of the Place</small>
                     {{ form.type() }}
                 </div>
                 <div class="form-group">
                     {{ form.keyword.label }}
+                    <small class="form-text text-muted indent-small">Keyword of the Place</small>
                     {{ form.keyword() }}
                 </div>
                 <div class="form-group">
                     {{ form.radius.label }}
+                    <small class="form-text text-muted indent-small">Radius to Find</small>
                     {{ form.radius() }}
                 </div>
                 <div class="form-group mt-5 mb-5">
                     {{ form.submit() }}
                 </div>
             </form>
+        </div>
+        <div class="container bg-light mt-3 mb-3">
+            <div id="map" style="height: 400px; width: 100%;"></div>
         </div>
         <table class="table">
             <thead>
@@ -51,21 +59,28 @@
                 <th scope="col">Rating</th>
             </tr>
             </thead>
-            {% if results is not none %}
-            {% for place in results %}
             <tbody>
-            <td>
-                <h5 class="font-weight-bold">{{ place['name'] }}</h5>
-                <small class="text-muted">place['']</small>
-            </td>
-            <td>
-                <h6 class="text-danger">Rating = {{place['rating'] }}</h6>
-            </td>
+            {% if results is not none %}
+            {% for name, emoji, vicinity in results_zipped %}
+            <tr>
+                <td>
+                    <a href="#"><h5 class="font-weight-bold" data-location="{{ vicinity }}">{{ name }}</h5></a>
+                    <a href="https://www.google.com/maps/search/?api=1&query={{ name }}{{ vicinity }}">
+                        <small class="text-muted">{{ vicinity }}</small>
+                    </a>
+                </td>
+                <td>
+                    <h6 class="text-danger">{{ emoji }}</h6>
+                </td>
+                <td>
+                    <a href="#" class="add-cafe" data-name="{{ name }}"
+                       data-rating="{{ emoji }}" data-vicinity="{{ vicinity }}"><i class=" fa-solid fa-plus"></i></a>
+                </td>
+            </tr>
             {% endfor %}
             {% endif %}
             </tbody>
         </table>
-        <div id="map" style="height: 400px; width: 50%;"></div>
     </div>
 </div>
 </div>
@@ -73,8 +88,8 @@
 
 <script type="text/javascript">
     var mapKey = "{{ key }}";
-    var locationName = "{{ location_name }}";
+
 </script>
-<script src="{{ url_for('static', filename='js/script.js') }}" async defer></script>
+<script src="{{ url_for('static', filename='js/scripts.js') }}" async defer></script>
 {% include 'footer.html' %}
 {% endblock %}

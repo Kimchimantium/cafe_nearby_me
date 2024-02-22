@@ -9,6 +9,16 @@ import os
 from geocode import GetGeo
 from pprint import pprint
 
+# TODO
+# <small> to each index.html form labels ✓
+# check whether Chrome validator works or flask-wtf validator works ✓
+# make sqlalchemy save the API results + user added info
+# make an add button in index.html that moves the API searched item to my list ✓
+# make navigator to move to my coffee list page
+# make eventlistener to show map when place clicked ✓
+# disable the screen to go to top whenever plus icon is clicked ✓
+# CSRF token
+
 # ===== App Setting =====
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///cafes.db"
@@ -24,7 +34,8 @@ gg = GetGeo()
 class Cafe(db.Model):
     __tablename__ = 'Korea'
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), unique=True, nullable=False)
+    name = db.Column(db.String(50), nullable=False)
+    rating = db.column(db.String(30))
     map_url = db.Column(db.String(250), unique=True)
     img_url = db.Column(db.String(250), unique=True)
     location = db.Column(db.String(50), unique=True, nullable=False)
@@ -37,7 +48,7 @@ class Cafe(db.Model):
 
 
 class CafeForm(FlaskForm):
-    location = StringField(label='Where do You Live?',
+    location = StringField(label='Where to Search',
                            validators=[validators.DataRequired()],
                            render_kw={'placeholder': '경기도 성남시 분당구 정자일로 95',
                                       'class': 'form-control'})
@@ -73,24 +84,47 @@ def home():
 
     # Flask Form
     form = CafeForm()
-    location, key, result = None, None, []
+    location, result = None, []
+    # Get Form Data
+    results, result_names, result_emojis, result_vicinities, results_zipped = [], [], [], [], []
     if form.validate_on_submit():
         location = form.location.data
         type_ = form.type.data
         keyword = form.keyword.data
         radius = form.radius.data
-        print(f"{location}, {type_}, {keyword}, {radius}")
+
+        # Get Place JSON Data
         gg = GetGeo()
         result = gg.by_geo(type_=type_, keyword=keyword, address=location, radius=radius, save=True)
         results = result['results']
-        print(f"result: {result}")
         for result in results:
-            pprint(result['rating'])
+            result_names.append(result['name'])
+            result_vicinities.append(result['vicinity'])
+            rating_emojis = '😶' if result['rating'] == 0 else '⭐️' * int(result['rating'])
+            result_emojis.append(rating_emojis)
+        results_zipped = list(zip(result_names, result_emojis, result_vicinities))
+
+    # Get url args data
+    if request.method == 'POST' and request.is_json:
+        data = request.get_json()
+        selected_name = data.get('name')
+        selected_rating = data.get('rating')
+        selected_vicinity = data.get('vicinity')
+        if any(v is not None for v in [selected_name, selected_rating, selected_vicinity]):
+            new_cafe = Cafe(name=selected_name,
+                            rating=selected_rating,
+                            map_url=f"https://www.google.com/maps/search/?api=1&query="
+                                    f"{selected_name}{selected_vicinity}",
+                            location=selected_vicinity
+                            )
+            db.session.add(new_cafe)
+            db.session.commit()
     return render_template('index.html',
                            form=form,
                            location=location,
                            key=key,
-                           results=results)
+                           results=results,
+                           results_zipped=results_zipped)
 
 
 @app.route('/find_cafes', methods=['GET'])
