@@ -10,14 +10,12 @@ from geocode import GetGeo
 from pprint import pprint
 
 # TODO
-# <small> to each index.html form labels ✓
-# check whether Chrome validator works or flask-wtf validator works ✓
 # make sqlalchemy save the API results + user added info
-# make an add button in index.html that moves the API searched item to my list ✓
-# make navigator to move to my coffee list page
-# make eventlistener to show map when place clicked ✓
-# disable the screen to go to top whenever plus icon is clicked ✓
+# (form submit) btn pressed, locate map according to it js ✓
 # CSRF token
+# make 'My Cafes' page ✓
+# make navbar for header ✓
+
 
 # ===== App Setting =====
 app = Flask(__name__)
@@ -54,7 +52,6 @@ class CafeForm(FlaskForm):
                                       'class': 'form-control'})
     type = SelectField(label='Place Type',
                        default='cafe',
-                       validators=[validators.DataRequired()],
                        choices=[('restaurant', 'Restaurant'), ('cafe', 'Café'), ('bar', 'Bar'),
                                 ('hospital', 'Hospital'), ('atm', 'Atm'), ('museum', 'Museum'), ('park', 'Park'),
                                 ('gas_Station', 'Gas Station'), ('supermarket', 'Supermarket')],
@@ -127,9 +124,9 @@ def home():
                            results_zipped=results_zipped)
 
 
-@app.route('/find_cafes', methods=['GET'])
-def find_cafes():
-    pass
+@app.route('/mycafes', methods=['GET'])
+def my_cafes():
+    return render_template('mycafes.html')
 
 
 if __name__ == '__main__':
