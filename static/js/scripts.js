@@ -106,4 +106,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+//edit form collapse mycafes.html
+document.addEventListener('DOMContentLoaded', function () {
+    var myCollapseElements = document.querySelectorAll('.collapse');
+    myCollapseElements.forEach(function(elem) {
+        elem.addEventListener('show.bs.collapse', function () {
+            myCollapseElements.forEach(function(otherElem) {
+                if (elem !== otherElem && otherElem.classList.contains('show')) {
+                    var collapseInstance = new bootstrap.Collapse(otherElem, {
+                        toggle: false
+                    });
+                    collapseInstance.hide();
+                }
+            });
+        });
+    });
+});
+function submitForm(event, cafeId) {
+    event.preventDefault(); // Prevent the default form submission
+    var form = document.getElementById('form-' + cafeId);
+    var formData = new FormData(form);
+
+    fetch('/submit', { // Ensure this URL matches your Flask route
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        // Collapse the form here or show a success message
+        $('#collapseEdit-' + cafeId).collapse('hide');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+}
+
+
 

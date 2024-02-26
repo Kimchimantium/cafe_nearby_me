@@ -11,11 +11,12 @@ from pprint import pprint
 
 # TODO
 # make sqlalchemy save the API results + user added info
-# carousel for mycafes.html ✓
-# starbucks color theme for mycafes.html ✓
-# table of cafe_db in mycafes.html
+# table of cafe_db in mycafes.html ✓
+# form to update cafe info in mycafes.html ✓
+# sql update when form submitted ✓
+# collapsing js editor to edit cafe_db data ✓
 
-# form to update cafe info in mycafes.html
+# sqldb rating from emoji to float.
 
 # CSRF token
 
@@ -124,14 +125,20 @@ def home():
                            results_zipped=results_zipped)
 
 
-@app.route('/mycafes', methods=['GET'])
+@app.route('/mycafes', methods=['POST', 'GET'])
 def my_cafes():
+    if request.method == "POST":
+        new_id = request.form.get('cafe_id')
+        cafe = Cafe.query.get(new_id)
+        cafe.name = request.form.get('name')
+        cafe.rating = request.form.get('rating')
+        cafe.map_url = request.form.get('map_url')
+        cafe.location = request.form.get('location')
+        cafe.seats = request.form.get('seats')
+        cafe.coffee_price = request.form.get('coffee_price')
     cafe_db = db.session.query(Cafe).all()
-    for cafe in cafe_db:
-        print(cafe)
     return render_template('mycafes.html',
                            cafe_db=cafe_db)
-
 
 if __name__ == '__main__':
     app.run(port=7077, debug=True)

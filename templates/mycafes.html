@@ -2,13 +2,13 @@
 
 {% block content %}
 <!--title section-->
-<div class="container bg-starbucks-2">
-    <div class="container bg-starbucks-2">
-        <h1 class="display-1 text-starbucks-0">My Cafes</h1>
-        <h2 class="display-6 text-starbucks-1">Your Saved Cafes</h2>
+<div class="container bg-starbucks-gold">
+    <div class="container bg-starbucks-gold">
+        <h1 class="display-1 text-starbucks-green">My Cafes</h1>
+        <h2 class="display-6 text-starbucks-white">Saved Favorites</h2>
     </div>
     <!--carousel section-->
-    <div class="container bg-starbucks-0">
+    <div class="container bg-starbucks-green">
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
                 {% for cafe in cafe_db %}
@@ -20,13 +20,14 @@
             </div>
             <div class="carousel-inner">
                 {% for cafe in cafe_db %}
-                <div class="carousel-item {% if loop.index == 1 %}active{% endif %} text-center text-light fw-light">
-                    <p><span class="text-starbucks-2">NAME:</span> {{ cafe.name }}</p>
-                    <p><span class="text-starbucks-2">RATING:</span> {{ cafe.rating }}</p>
-                    <p><span class="text-starbucks-2">MAP:</span> <a href="{{ cafe.map_url }}"><i class="fa-regular fa-map" style="color: #f8f9fa"></i></a></p>
-                    <p><span class="text-starbucks-2">LOCATION:</span> {{ cafe.location }}</p>
-                    <p><span class="text-starbucks-2">SEATS:</span> {{ cafe.seats }}</p>
-                    <p><span class="text-starbucks-2">PRICE:</span> {{ cafe.coffee_price }}</p>
+                <div class="carousel-item {% if loop.index == 1 %}active{% endif %} text-center text-light fw-light mt-3 mb-3">
+                    <p><span class="text-starbucks-gold">NAME:</span> {{ cafe.name }}</p>
+                    <p><span class="text-starbucks-gold">RATING:</span> {{ cafe.rating }}</p>
+                    <p><span class="text-starbucks-gold">MAP:</span> <a href="{{ cafe.map_url }}"><i
+                            class="fa-regular fa-map" style="color: #f8f9fa"></i></a></p>
+                    <p><span class="text-starbucks-gold">LOCATION:</span> {{ cafe.location }}</p>
+                    <p><span class="text-starbucks-gold">SEATS:</span> {{ cafe.seats }}</p>
+                    <p><span class="text-starbucks-gold">PRICE:</span> {{ cafe.coffee_price }}</p>
                     <br>
                 </div>
                 {% endfor %}
@@ -43,9 +44,73 @@
             </button>
         </div>
     </div>
-    {% for cafe in ca
+    <!--  table section  -->
+    <div class="d-flex">
+        <button class="btn btn-starbucks-brown mt-3 mb-3 ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Show All
+        </button>
+    </div>
+    <div class="collapse" id="collapseExample">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Rating</th>
+                <th scope="col">Map</th>
+                <th scope="col">Location</th>
+                <th scope="col">Seats</th>
+                <th scope="col">Price</th>
+                <th scope="col">Edit</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for cafe in cafe_db %}
+            <tr>
+                <td>{{ cafe.name | default('N/A', true) }}</td>
+                <td>{{ cafe.rating | default('N/A', true) }}</td>
+                <td><a href="{{ cafe.map_url }}"><i class="fa-regular fa-map"></i></a></td>
+                <td>{{ cafe.location }}</td>
+                <td>{{ cafe.seats | default('N/A', true) }}</td>
+                <td>{{ cafe.coffee_price | default('N/A', true) }}</td>
+                <td><a data-bs-toggle="collapse"
+                       data-bs-target="#collapseEdit-{{ loop.index }}" aria-expanded="false"
+                       aria-controls="collapseEdit-{{ loop.index }}"><i
+                        class="fa-regular fa-pen-to-square"></i></a>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% for cafe in cafe_db %}
+    <div class="collapse" id="collapseEdit-{{ loop.index }}">
+        <form action="{{ url_for('my_cafes') }}" method="POST" onsubmit="submitForm(event, '{{ cafe.id }}';" class="row">
+            <input type="hidden" name="cafe_id" value="{{ cafe.id }}">
+            <div class="col-12">
+                <input type="text" name="name" class="form-control" placeholder="Name: {{ cafe.name }}" aria-label="Name">
+            </div>
+            <div class="col-12">
+                <input type="text" name="rating" class="form-control" placeholder="Rating: {{ cafe.rating }}" aria-label="Rating">
+            </div>
+            <div class="col-12">
+                <input type="text" name="map_url" class="form-control" placeholder="Map: {{ cafe.map_url }}" aria-label="Map">
+            </div>
+            <div class="col-12">
+                <input type="text" name="location" class="form-control" placeholder="Location: {{ cafe.location }}" aria-label="Location">
+            </div>
+            <div class="col-6">
+                <input type="text" name="seats" class="form-control" placeholder="Seats: {{ cafe.seats }}" aria-label="Seats">
+            </div>
+            <div class="col-6">
+                <input type="text" name="coffee_price" class="form-control" placeholder="Price: {{ cafe.coffee_price }}" aria-label="Price">
+            </div>
+            <button type="submit" class="btn btn-primary">Save Change</button>
+        </form>
+    </div>
+    {% endfor %}
 </div>
 
-
+<script src="{{ url_for('static', filename='js/scripts.js') }}" async defer></script>
 {% include 'footer.html' %}
 {% endblock %}
