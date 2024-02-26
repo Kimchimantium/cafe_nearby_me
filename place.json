@@ -29345,5 +29345,2598 @@
             }
         ],
         "status": "OK"
+    },
+    {
+        "html_attributions": [],
+        "results": [
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3621309,
+                        "lng": 127.1061073
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.36348072989272,
+                            "lng": 127.1074571298927
+                        },
+                        "southwest": {
+                            "lat": 37.36078107010727,
+                            "lng": 127.1047574701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 정자엠코점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/113387245063182735770\">우일상</a>"
+                        ],
+                        "photo_reference": "ATplDJb0hQsiwhFuvamiC90Nt9NhrMtLcTRWI7hs85waJF0tQJMhQ0uO7kegkvXGXm2lxLV9vggi9QC0vQbtDPaBCyA24TZG513g2rY_wPNg5-9Q_NiomtlbqKJHI5nzf98kjF-albACz0jwvd5BBjKd1ZxvelMuYLRiYeKfsjLshk7KpUNH",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJd1LV44NZezURwW_4I4a9r5Y",
+                "plus_code": {
+                    "compound_code": "9464+VC 성남시 경기도",
+                    "global_code": "8Q999464+VC"
+                },
+                "rating": 4,
+                "reference": "ChIJd1LV44NZezURwW_4I4a9r5Y",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 9,
+                "vicinity": "성남시 분당구 정자동 166-2"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3690417,
+                        "lng": 127.1125669
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37039152989271,
+                            "lng": 127.1139167298927
+                        },
+                        "southwest": {
+                            "lat": 37.36769187010727,
+                            "lng": 127.1112170701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 분당느티마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110372297078188535950\">Hyerim Kwon</a>"
+                        ],
+                        "photo_reference": "ATplDJaM_pg_Sda6Llgvwi72VC0OtS_sNXMJNYWYZEqtudsd2RFx4C4LFkE5s-UPQCFh7ysbv1fqj_5sfAbZhmqDUJWMEIfkXoRQKCASWRMivJ0fqiGxu9O3WksM3s-IUGzHzEK7sZkLY8rnomvMzj2fZBurylidBX488C2E2cDm6878wl-g",
+                        "width": 4000
+                    }
+                ],
+                "place_id": "ChIJ_eElTgFZezUR9Y0L34f6fNc",
+                "plus_code": {
+                    "compound_code": "9497+J2 성남시 경기도",
+                    "global_code": "8Q999497+J2"
+                },
+                "rating": 4.1,
+                "reference": "ChIJ_eElTgFZezUR9Y0L34f6fNc",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 30,
+                "vicinity": "성남시 분당구 정자동 느티로69번길 8"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3775038,
+                        "lng": 127.112786
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37885362989272,
+                            "lng": 127.1141358298927
+                        },
+                        "southwest": {
+                            "lat": 37.37615397010728,
+                            "lng": 127.1114361701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 수내로데오점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "place_id": "ChIJ99bJP-NZezURxJezwdGF-ss",
+                "plus_code": {
+                    "compound_code": "94H7+24 성남시 경기도",
+                    "global_code": "8Q9994H7+24"
+                },
+                "rating": 4.2,
+                "reference": "ChIJ99bJP-NZezURxJezwdGF-ss",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 10,
+                "vicinity": "성남시 분당구 KR 백현로101번길 17 초림프라자번영회 309호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3707736,
+                        "lng": 127.1064848
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37212342989273,
+                            "lng": 127.1078346298927
+                        },
+                        "southwest": {
+                            "lat": 37.36942377010728,
+                            "lng": 127.1051349701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가엠지씨커피정자점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3408,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/100911462576154484707\">A Google User</a>"
+                        ],
+                        "photo_reference": "ATplDJZhp5623OIrdxp5th53BlgSiuzrGzLYb7jLcbuUQb61sHGpwYX9r7KbNC21SaWgOW1wYUOpPBuEvKQMgu0fKBoTuiGSb3Tk1i6MmcGPYFn486eI9xKn5u-YTeSSuoVRjz0OMRJFtMpXOOVMoBvVFRnqBy3HuiU2CdaMAr-2RVJhC_e5",
+                        "width": 2556
+                    }
+                ],
+                "place_id": "ChIJV-sjozdYezURFTlJzFdwSdY",
+                "plus_code": {
+                    "compound_code": "94C4+8H 성남시 경기도",
+                    "global_code": "8Q9994C4+8H"
+                },
+                "rating": 3.6,
+                "reference": "ChIJV-sjozdYezURFTlJzFdwSdY",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 5,
+                "vicinity": "성남시 분당구 정자동 번지 116호 13-1 KR 3단지아파트 동양정자파라곤"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3769086,
+                        "lng": 127.1163165
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37825842989272,
+                            "lng": 127.1176663298927
+                        },
+                        "southwest": {
+                            "lat": 37.37555877010728,
+                            "lng": 127.1149666701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수내양지마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/107286292749481439488\">Jason Ham</a>"
+                        ],
+                        "photo_reference": "ATplDJbHdDNAIXC27uaVDZDlif6NBBC2wb5U-5Y_986tHIvmtX_RvmZf9xDVET6pUqWfuNMrwnm-h2LCLi5rtYEmHJTpH5-bMIQEpidL6P0ReRtXsk1cudbFJ5afU3K3ls4y0nxd5zkxGTGd5UNqlClPjmlb7BVcsASaI7ND-MBPgb97sPZ3",
+                        "width": 1868
+                    }
+                ],
+                "place_id": "ChIJVUH0FUJZezURhf7KLvVWzwQ",
+                "plus_code": {
+                    "compound_code": "94G8+QG 성남시 경기도",
+                    "global_code": "8Q9994G8+QG"
+                },
+                "rating": 5,
+                "reference": "ChIJVUH0FUJZezURhf7KLvVWzwQ",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 1,
+                "vicinity": "성남시 분당구 내정로165번길 38"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3655146,
+                        "lng": 127.1063883
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.36686442989272,
+                            "lng": 127.1077381298927
+                        },
+                        "southwest": {
+                            "lat": 37.36416477010728,
+                            "lng": 127.1050384701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 정자역점",
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/104079800624630221121\">A Google User</a>"
+                        ],
+                        "photo_reference": "ATplDJbhO08Zu6AWiHAaDdTdEu1x19eK7Nyy_ThjNR9oosvA3Efm4BQiGVSiyMoMpBrsRV8zTmwOK9HDvH-pQcyY1u3zfgA0PcLtowKzDtZKDkMOXAkpNKCkg_HZoaPoA1rd7-llFBG1GczN1Pd31AxxuLGII3ONfu52oXNwVXR1hPqFl-Gc",
+                        "width": 2268
+                    }
+                ],
+                "place_id": "ChIJO00Ym9dZezURzOmCldK9n1A",
+                "plus_code": {
+                    "compound_code": "9484+6H 성남시 경기도",
+                    "global_code": "8Q999484+6H"
+                },
+                "rating": 3.9,
+                "reference": "ChIJO00Ym9dZezURzOmCldK9n1A",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 8,
+                "vicinity": "성남시 분당구 성남대로331번길 13"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3628181,
+                        "lng": 127.1134033
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.36416792989272,
+                            "lng": 127.1147531298927
+                        },
+                        "southwest": {
+                            "lat": 37.36146827010728,
+                            "lng": 127.1120534701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 분당상록마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 1868,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/107286292749481439488\">Jason Ham</a>"
+                        ],
+                        "photo_reference": "ATplDJaZFfoVTCJrGTylLjghU9XKOtsc_1Ws3EjPUeXG_MlJJU5Xf3hh185s9WSbtab09AFgCWR9EIKigLM-QS_KHJhaOENFMDh6Crq0qULKD2irOWsehIZVFHideQDjD0sK408zQay6Oa8v3qpW_ZKsR2wEfSHOdzanJyqmVaqElNHCtdQU",
+                        "width": 4000
+                    }
+                ],
+                "place_id": "ChIJnZDZNABZezURFXi6a_y_RSk",
+                "plus_code": {
+                    "compound_code": "9477+49 성남시 경기도",
+                    "global_code": "8Q999477+49"
+                },
+                "rating": 5,
+                "reference": "ChIJnZDZNABZezURFXi6a_y_RSk",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 1,
+                "vicinity": "성남시 분당구 정자로76번길 5"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.37939710000001,
+                        "lng": 127.1160909
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.38074692989272,
+                            "lng": 127.1174407298927
+                        },
+                        "southwest": {
+                            "lat": 37.37804727010728,
+                            "lng": 127.1147410701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 수내역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/109079797835098915946\">Byoung woo Kim</a>"
+                        ],
+                        "photo_reference": "ATplDJZ2ZoBtCbVbVLKsXbMu5kcrzt4uA4sd8q_x9PFIw7GADbyZ4ZF-9sl4JWKJwCoJr903o5QLF5GrRIR05iY3VY1SydBCFzgp--_Uty_h3-fiuTSut4GqyjfwSZXeAK0T-q8LmTrQs92RnPx8q9_ePztdpeF6gaC6z3lfwIywpLdyjR55",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJ8Ur_4Y5ZezURXVvytgTQIVo",
+                "plus_code": {
+                    "compound_code": "94H8+QC 성남시 경기도",
+                    "global_code": "8Q9994H8+QC"
+                },
+                "rating": 3.8,
+                "reference": "ChIJ8Ur_4Y5ZezURXVvytgTQIVo",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 32,
+                "vicinity": "성남시 분당구 수내1동 황새울로258번길 32"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3774428,
+                        "lng": 127.1124973
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37879262989272,
+                            "lng": 127.1138471298927
+                        },
+                        "southwest": {
+                            "lat": 37.37609297010728,
+                            "lng": 127.1111474701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가엠지씨커피수내로데오점",
+                "place_id": "ChIJlSoDCj1YezURWgRInGqiRuo",
+                "plus_code": {
+                    "compound_code": "94G6+XX 성남시 경기도",
+                    "global_code": "8Q9994G6+XX"
+                },
+                "rating": 0,
+                "reference": "ChIJlSoDCj1YezURWgRInGqiRuo",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 0,
+                "vicinity": "성남시 분당구 수내동 번지 1층 20-2 초림프라자번영회 111호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3737625,
+                        "lng": 127.1199219
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37511232989272,
+                            "lng": 127.1212717298927
+                        },
+                        "southwest": {
+                            "lat": 37.37241267010727,
+                            "lng": 127.1185720701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "MEGA COFFEE",
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/103305071067013910658\">A Google User</a>"
+                        ],
+                        "photo_reference": "ATplDJZ7J6K-hNzR1jA731GgTswG4MVduw9FJmz0D1SXDyBpa-ZwuCrZt6CmuAE9OzqJZSnKsuH-mPvf3DbrWPz5RXo11ejuFotbH5sH82PILX__rAWFLXPVsmqGGEINJUP1VyuFw4E9r8owMl12vwK1hB0Bs-J3esl83cy4rQrx1bg_7Jf7",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJNyjAAwBZezURvxSTZq-NGZg",
+                "rating": 5,
+                "reference": "ChIJNyjAAwBZezURvxSTZq-NGZg",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 1,
+                "vicinity": "성남시"
+            }
+        ],
+        "status": "OK"
+    },
+    {
+        "html_attributions": [],
+        "results": [],
+        "status": "ZERO_RESULTS"
+    },
+    {
+        "html_attributions": [],
+        "next_page_token": "ATplDJau6GhsA4queYYOqq540i3mWTx3tZynVaWDCoz4VqGp3XJW--rYqhrTs2khwTGcdmUJ5VjuBDOlsxr0Ztn0oMtvqHruBJvXC-wf8XnEQkIyL33O2ww5QOt_KEE48kh40Nb071H9cMZ4CFwJcXyOS3fSKGDJPsrPuYuRTpVwERlNDWmwCWzpHT44FX9NTMqLGkuJkja_MoTLZx38ikJvROZb8nCMSS2eRg7v47r8AHhAMisllriikKWPsFjFH08ZZpExB-lu3ItnsLoU_RvgvGmjarQ-CWA7V9-ImThbK2fxGCNU1dCfZVKUdyTbxU0-xUKhXHxZQRRjrPBYzgHOTB6qPCYTf3b7RulJ97VRvdVFrK8B64xhET9XLa34P7Kgg96fl2WeFdc1zXVPAGv9BJfDe0I3nYDXZ0AG2xSnPl0wslZSgKpMgBMOFi4YW6QNuKY",
+        "results": [
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2462873,
+                        "lng": 127.0601598
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.24763712989272,
+                            "lng": 127.0615096298927
+                        },
+                        "southwest": {
+                            "lat": 37.24493747010728,
+                            "lng": 127.0588099701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 망포역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110812888533794064091\">한래희</a>"
+                        ],
+                        "photo_reference": "ATplDJZAYk224Awh7YX3-SPmDDvVw23ZZSjaH0NEYyW4hABfUxDWciNg75u2n6yXtDly9FKthNeXkQy9vm1ffpg9qpBiOG1KWXh1MV7ukst19n3ijRV-zwv88KPgsOxHFN_U-bjNh0cz_KZzuw1cG1KAfeNvLumIFCmsGqJC38Y44FE2fdXu",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJQ5AqjXhFezUROpXWxhz7-ss",
+                "plus_code": {
+                    "compound_code": "63W6+G3 수원시 경기도",
+                    "global_code": "8Q9963W6+G3"
+                },
+                "price_level": 1,
+                "rating": 4.4,
+                "reference": "ChIJQ5AqjXhFezUROpXWxhz7-ss",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 95,
+                "vicinity": "수원시 영통구 영통동 덕영대로 1547"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2527663,
+                        "lng": 127.0751901
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.25411612989272,
+                            "lng": 127.0765399298927
+                        },
+                        "southwest": {
+                            "lat": 37.25141647010728,
+                            "lng": 127.0738402701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수원영통점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110177267972750236572\">JaeYeon Cho</a>"
+                        ],
+                        "photo_reference": "ATplDJYZ9SVl_wXLrHvZ44w4c2fSw7qtQPic2XnzY42QFfAdaSq68d2dscfa2kxC1aiIFkWzrqhMQYMPwIZl4h9J09i0iPmlKLCTwtP6CnEZSx7UEOyci1HBZL2IQTMzGX3KLWsm8zvhDRt-BVs37GLnMVNnRMMkH9YjKB-grd9Zj362z1YX",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJAdZ6ZNpEezURavdSffFTL2U",
+                "plus_code": {
+                    "compound_code": "733G+43 수원시 경기도",
+                    "global_code": "8Q99733G+43"
+                },
+                "price_level": 1,
+                "rating": 3.9,
+                "reference": "ChIJAdZ6ZNpEezURavdSffFTL2U",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 31,
+                "vicinity": "수원시 영통구 영통동 998-8번지 KR 키라레스토아 1층 106 106-1호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3775038,
+                        "lng": 127.112786
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37885362989272,
+                            "lng": 127.1141358298927
+                        },
+                        "southwest": {
+                            "lat": 37.37615397010728,
+                            "lng": 127.1114361701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 수내로데오점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "place_id": "ChIJ99bJP-NZezURxJezwdGF-ss",
+                "plus_code": {
+                    "compound_code": "94H7+24 성남시 경기도",
+                    "global_code": "8Q9994H7+24"
+                },
+                "rating": 4.2,
+                "reference": "ChIJ99bJP-NZezURxJezwdGF-ss",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 10,
+                "vicinity": "성남시 분당구 KR 백현로101번길 17 초림프라자번영회 309호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3191157,
+                        "lng": 127.0882331
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.32046552989272,
+                            "lng": 127.0895829298927
+                        },
+                        "southwest": {
+                            "lat": 37.31776587010727,
+                            "lng": 127.0868832701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수지신정마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/101834330769689830103\">JU SEOP KWON</a>"
+                        ],
+                        "photo_reference": "ATplDJZKnqNdXB-IzT8BGaX_QCJiFRCjak6scfq3j2Qyy5aSPY5hZKuY_pP1TZFPeJukvhrmlVMJo_dDuzvpQXgD156jtB5eSxfDEqQEvtzs0kEK9dqu3xG_WQuTUeDcB-1aiDrmvF1kUrshZ5k6oUOxnCzIKleK8_fbUEUsWNsvvQVu2Glx",
+                        "width": 4000
+                    }
+                ],
+                "place_id": "ChIJEUkAcR1bezURf6hwXWuf0Kk",
+                "plus_code": {
+                    "compound_code": "839Q+J7 수지구 경기도 용인시",
+                    "global_code": "8Q99839Q+J7"
+                },
+                "rating": 4.3,
+                "reference": "ChIJEUkAcR1bezURf6hwXWuf0Kk",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 26,
+                "vicinity": "용인시 수지구 정평로 34-2 메가커피 1층"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3621309,
+                        "lng": 127.1061073
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.36348072989272,
+                            "lng": 127.1074571298927
+                        },
+                        "southwest": {
+                            "lat": 37.36078107010727,
+                            "lng": 127.1047574701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 정자엠코점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/113387245063182735770\">우일상</a>"
+                        ],
+                        "photo_reference": "ATplDJY-SnKDm55vMz-Xr3dln3WsOpDAVEZlQPZi9U5N9tenIW7ErjfacJlR6l_5kMbR_9EKslFr8MGPsM_SP51rSE1oj0gXoZV3l4RxlBVlqxhN_MoT36KZMZKmSdRs8F8ymvAsY-d71b1Ou7YeNJfkCuvJQEvuoOWifQA9AQyKCyiAL2lH",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJd1LV44NZezURwW_4I4a9r5Y",
+                "plus_code": {
+                    "compound_code": "9464+VC 성남시 경기도",
+                    "global_code": "8Q999464+VC"
+                },
+                "rating": 4,
+                "reference": "ChIJd1LV44NZezURwW_4I4a9r5Y",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 9,
+                "vicinity": "성남시 분당구 정자동 166-2"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.4116217,
+                        "lng": 127.1263444
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.41297152989272,
+                            "lng": 127.1276942298927
+                        },
+                        "southwest": {
+                            "lat": 37.41027187010727,
+                            "lng": 127.1249945701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 야탑점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/113600928376560074424\">안은찬</a>"
+                        ],
+                        "photo_reference": "ATplDJaKsHC3zFbjR53qsBQnhYVS6rMpvlRkNBVMbt0QBg2y-YB5Kd1cSqopbP1gKdT4sTixVNStdzZEgN1KzH_2uanngs5KjNuKQGnxtZYN0Vm3Kh2eFO0wpxtkcqEXduptgSME7l17OrN4BVEj-07dLbRdRCsVY9iRqZogfc-B9Is3HdUQ",
+                        "width": 4032
+                    }
+                ],
+                "place_id": "ChIJTZyDW3WofDURLanUQBh7n1Y",
+                "plus_code": {
+                    "compound_code": "C46G+JG 성남시 경기도",
+                    "global_code": "8Q99C46G+JG"
+                },
+                "price_level": 1,
+                "rating": 4.1,
+                "reference": "ChIJTZyDW3WofDURLanUQBh7n1Y",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 33,
+                "vicinity": "성남시 분당구 야탑로69번길 21"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3690417,
+                        "lng": 127.1125669
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37039152989271,
+                            "lng": 127.1139167298927
+                        },
+                        "southwest": {
+                            "lat": 37.36769187010727,
+                            "lng": 127.1112170701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 분당느티마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110372297078188535950\">Hyerim Kwon</a>"
+                        ],
+                        "photo_reference": "ATplDJb4AT5rLKFihKYtL_OIT64lkUyaCml23pWX9M9wOAVLDP-pDRa8a1efhWMYy3HqvH60d61nKTi1-vwmtBOvK8amdyM3kmBBPn5ihGfCocTy8_NXxP8rd9nLCHsUlImWE1BvEFQdQr3Tnw_32SS-imSve2j40qQaG2YQES5wANwjp-oE",
+                        "width": 4000
+                    }
+                ],
+                "place_id": "ChIJ_eElTgFZezUR9Y0L34f6fNc",
+                "plus_code": {
+                    "compound_code": "9497+J2 성남시 경기도",
+                    "global_code": "8Q999497+J2"
+                },
+                "rating": 4.1,
+                "reference": "ChIJ_eElTgFZezUR9Y0L34f6fNc",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 30,
+                "vicinity": "성남시 분당구 정자동 느티로69번길 8"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.4116071,
+                        "lng": 127.1341594
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.41295692989272,
+                            "lng": 127.1355092298927
+                        },
+                        "southwest": {
+                            "lat": 37.41025727010727,
+                            "lng": 127.1328095701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 야탑중앙점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 2000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/117810987496712210586\">Benjamin Jang</a>"
+                        ],
+                        "photo_reference": "ATplDJaQaALiL-9zV8zOef_YiGzpWMIvfIVg2-jgopP0shSkApTZO7UHGq1DrCSKSmv7xr9PFup8-IPEMLEydwIBbhDeCFBhCa-fu4t77xpFeWeeS4kJvkbFIu7IfFWHWR47kTRch1UQBw0G80qpIS0NyokfJn6PPqUGKw0_c27KTAUT6Gcp",
+                        "width": 3000
+                    }
+                ],
+                "place_id": "ChIJl-KpY7mpfDUR7nOjs4XUNJc",
+                "plus_code": {
+                    "compound_code": "C46M+JM 성남시 경기도",
+                    "global_code": "8Q99C46M+JM"
+                },
+                "price_level": 1,
+                "rating": 4.1,
+                "reference": "ChIJl-KpY7mpfDUR7nOjs4XUNJc",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 55,
+                "vicinity": "성남시 분당구 야탑3동 매화로 46"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.4052205,
+                        "lng": 127.1229325
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.40657032989272,
+                            "lng": 127.1242823298927
+                        },
+                        "southwest": {
+                            "lat": 37.40387067010727,
+                            "lng": 127.1215826701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 분당아름마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/115931857442827414452\">이태희</a>"
+                        ],
+                        "photo_reference": "ATplDJZjZd2Ir4b8SG-7kCOV2oG1xrjouSUWUHSjEPsXx4kz0iiO04hXxtSxPF_rdkx_Ggr8gfZT_p2WI1tOYm1EFvY_f7bwRyWJTX5krnG6MW814WbJ8xB2bpb4X9N8AGg1n0B6hEQHDo8oVFsHQkUvwaOQ0mlDokpBbN5VLu2rVfZnHiI",
+                        "width": 3000
+                    }
+                ],
+                "place_id": "ChIJaaapAOOnfDURkZCqbiCgZbE",
+                "plus_code": {
+                    "compound_code": "C44F+35 성남시 경기도",
+                    "global_code": "8Q99C44F+35"
+                },
+                "rating": 3.6,
+                "reference": "ChIJaaapAOOnfDURkZCqbiCgZbE",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 15,
+                "vicinity": "성남시 분당구 이매동 판교로 442 1층"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3891744,
+                        "lng": 127.0896953
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.39052422989273,
+                            "lng": 127.0910451298927
+                        },
+                        "southwest": {
+                            "lat": 37.38782457010729,
+                            "lng": 127.0883454701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 판교원마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 1920,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/101565121413456196430\">Peter RYU</a>"
+                        ],
+                        "photo_reference": "ATplDJbyLbPExsYE29mx3PnDMYiPCMe7USinEgefYxyvX57ksTYr0oKToqm9apzrUh6dAHBwzHNCAbJ2U8BbegL3tEw5LN9BD2dRDlzV2EaR5fUCN-jcMauOwlcEg8Z7LXCQyLhiEAqav6aEBI5rDaBrKeXZ5_6Xipy4RsbSKmJc6Dx6SHni",
+                        "width": 1080
+                    }
+                ],
+                "place_id": "ChIJF3uaco9ZezURD4j6J1HVK24",
+                "plus_code": {
+                    "compound_code": "93QQ+MV 성남시 경기도",
+                    "global_code": "8Q9993QQ+MV"
+                },
+                "rating": 3.7,
+                "reference": "ChIJF3uaco9ZezURD4j6J1HVK24",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 3,
+                "vicinity": "성남시 분당구 판교동 운중로 242"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.37939710000001,
+                        "lng": 127.1160909
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.38074692989272,
+                            "lng": 127.1174407298927
+                        },
+                        "southwest": {
+                            "lat": 37.37804727010728,
+                            "lng": 127.1147410701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 수내역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/109079797835098915946\">Byoung woo Kim</a>"
+                        ],
+                        "photo_reference": "ATplDJb4Mk3nCab6WhO7XCJTP8EFE-N-7vLHeF1M2uU4JDRtxzLk4XF-d3S3WRG4mzTWV3dh2St6yRgdSOFvKtFPeB1mxC6jYD2EMOmNfGz7fcutunBcPNUibN3UfY-b5Fz9bec21v3cetSjp1uWkpVHhYahPFXFSInG2-wGgwp5I6wKYizF",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJ8Ur_4Y5ZezURXVvytgTQIVo",
+                "plus_code": {
+                    "compound_code": "94H8+QC 성남시 경기도",
+                    "global_code": "8Q9994H8+QC"
+                },
+                "rating": 3.8,
+                "reference": "ChIJ8Ur_4Y5ZezURXVvytgTQIVo",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 32,
+                "vicinity": "성남시 분당구 수내1동 황새울로258번길 32"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2593571,
+                        "lng": 127.0439558
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.26070692989272,
+                            "lng": 127.0453056298927
+                        },
+                        "southwest": {
+                            "lat": 37.25800727010728,
+                            "lng": 127.0426059701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수원영통구청점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 748,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/107755523776108941644\">A Google User</a>"
+                        ],
+                        "photo_reference": "ATplDJYsqSJjwOjpQd7T5s70XHTUHJqzh7KPsS9-utDw07sV0Dbj42dI-PWd-bEt01y9qGCtCP2bW8qO_M0KMrHSMlyJjD9bMvF-55tIJPz2M4rOX3LNbPUzDsDFu9CF2lKxWojf3NaQxstwagaa0DNdR6K4JdN4QHxRGo8_96nwSHVfCJ3J",
+                        "width": 1011
+                    }
+                ],
+                "place_id": "ChIJIeM9sFNFezURAthCFrheUJw",
+                "plus_code": {
+                    "compound_code": "725V+PH 수원시 경기도",
+                    "global_code": "8Q99725V+PH"
+                },
+                "price_level": 1,
+                "rating": 4.1,
+                "reference": "ChIJIeM9sFNFezURAthCFrheUJw",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 68,
+                "vicinity": "수원시 영통구 효원로 387"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2558958,
+                        "lng": 127.0747189
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.25724562989272,
+                            "lng": 127.0760687298927
+                        },
+                        "southwest": {
+                            "lat": 37.25454597010727,
+                            "lng": 127.0733690701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 영통청명점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110177267972750236572\">JaeYeon Cho</a>"
+                        ],
+                        "photo_reference": "ATplDJYsU2jaQUtabt6bRUJ_0eZ_P4wlRIAuGsC838GScrxo6IYfzGc3xu3Z30w8Qmy6tXxvUrbfNUN41ZArQu9QdyLVxHbe8ej3yMPvZ2w6NS3lPfkJembMtQi4scap3OZa6BgdSHkMKxK73iJUbq2uszTtYb4GZpcv8KyaDmwdu3mcX0GT",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJpfdFfENFezURfcpzT7nILFs",
+                "plus_code": {
+                    "compound_code": "734F+9V 수원시 경기도",
+                    "global_code": "8Q99734F+9V"
+                },
+                "price_level": 1,
+                "rating": 4.7,
+                "reference": "ChIJpfdFfENFezURfcpzT7nILFs",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 3,
+                "vicinity": "수원시 영통구 봉영로 1623 드림피아빌딩 1층 108호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3206784,
+                        "lng": 127.1125189
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.32202822989272,
+                            "lng": 127.1138687298927
+                        },
+                        "southwest": {
+                            "lat": 37.31932857010728,
+                            "lng": 127.1111690701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 죽전보정점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3468,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/111436391052113054035\">A Google User</a>"
+                        ],
+                        "photo_reference": "ATplDJYN5xQpnXIQSl9f0Tl0XlYLuxnOX0T_D5WRyXuNWk3ZL75AcgV-3qrcuOZb-nFFoVcm_y7ju_A8VKl_kEdYL-LYANyM5_ZxYyk0gcRR-KSw9MuJy6knV0BFNNEeYy3Up-8QGSR024N8eX6C7496gVDXFCXzW_LcQzi5dwe9fzpMkfrK",
+                        "width": 4624
+                    }
+                ],
+                "place_id": "ChIJJSiW-BxaezURia8QoIidtPo",
+                "plus_code": {
+                    "compound_code": "84C7+72 기흥구 경기도 용인시",
+                    "global_code": "8Q9984C7+72"
+                },
+                "rating": 3.7,
+                "reference": "ChIJJSiW-BxaezURia8QoIidtPo",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 7,
+                "vicinity": "용인시 기흥구 죽전로 33 이데아프라자 1층"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2655274,
+                        "lng": 127.0773225
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.26687722989272,
+                            "lng": 127.0786723298927
+                        },
+                        "southwest": {
+                            "lat": 37.26417757010728,
+                            "lng": 127.0759726701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수원황골마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/112626304606551288341\">Arvind Tirkey</a>"
+                        ],
+                        "photo_reference": "ATplDJY_8WzjgonXPOMvIAiTh82c9-obdVk8CL8VQe8BmaVY-IBnoZXNsxTbh8_MyGVpVdyMupS8wYifOq8bIkfqAgfolRs3sKQHTqUnUTqvXPrpAILzsWJCxcM7U7OhDghk6J2wpRyl9EjrJ0kfKh03vdPx7y7QT2YoNW5ZbHSC63cQ8sDO",
+                        "width": 4032
+                    }
+                ],
+                "place_id": "ChIJh6oxTV1bezURB5yLbfd2Ik4",
+                "plus_code": {
+                    "compound_code": "738G+6W 수원시 경기도",
+                    "global_code": "8Q99738G+6W"
+                },
+                "price_level": 1,
+                "rating": 4.4,
+                "reference": "ChIJh6oxTV1bezURB5yLbfd2Ik4",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 104,
+                "vicinity": "수원시 영통구 영통로 523 1층"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3859541,
+                        "lng": 127.1249861
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.38730392989272,
+                            "lng": 127.1263359298927
+                        },
+                        "southwest": {
+                            "lat": 37.38460427010728,
+                            "lng": 127.1236362701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 서현역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4656,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110679810269452968953\">adrian suh</a>"
+                        ],
+                        "photo_reference": "ATplDJY5AiKOeNAT4whVlSExBSjdhaGyisLUuvjvmbNpGMP1WrlacJkGjCtTS5lB5cwk5qGPRV_EeS7uTXIDduG_KqNTw4tIwlDQ2dICSw2tF1OjReJzTeU-fLMYFDEZmtcUelZ4FR5nhsaDrkLavs9WuQfI1_iO7kQCdEEC4wbQcfeCOa7S",
+                        "width": 3492
+                    }
+                ],
+                "place_id": "ChIJi4mq6UFZezURpi-B7F8Us38",
+                "plus_code": {
+                    "compound_code": "94PF+9X 성남시 경기도",
+                    "global_code": "8Q9994PF+9X"
+                },
+                "price_level": 1,
+                "rating": 4.1,
+                "reference": "ChIJi4mq6UFZezURpi-B7F8Us38",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 13,
+                "vicinity": "성남시 분당구 서현동 황새울로360번길 26"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3497168,
+                        "lng": 127.1096663
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.35106662989272,
+                            "lng": 127.1110161298927
+                        },
+                        "southwest": {
+                            "lat": 37.34836697010728,
+                            "lng": 127.1083164701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 미금역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/114599657338794635581\">백효운</a>"
+                        ],
+                        "photo_reference": "ATplDJZXBHd0ZmGJ9wcyINwqZAMiH7F1SazQjymOX18y2HtZHW7cXXqh4VV9RQRGb5HneExvmUY8RA8TH4R_QXmOjIGxkIQ6O1JV0j6M3w19MVG_4ifvW7dTMB1DwhbK1HbzYZIGO9Vxov1atlsWP91Y3ZzznqWQKrNn56SFuZkpU5M7U7jb",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJ45zxxcVZezURuOpkymdaUlM",
+                "plus_code": {
+                    "compound_code": "84X5+VV 성남시 경기도",
+                    "global_code": "8Q9984X5+VV"
+                },
+                "rating": 4.2,
+                "reference": "ChIJ45zxxcVZezURuOpkymdaUlM",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 30,
+                "vicinity": "성남시 분당구 구미1동 돌마로 68 프라자 201"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3742408,
+                        "lng": 127.1364052
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37559062989272,
+                            "lng": 127.1377550298927
+                        },
+                        "southwest": {
+                            "lat": 37.37289097010727,
+                            "lng": 127.1350553701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 분당효자점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/115916063479680896389\">남윤재</a>"
+                        ],
+                        "photo_reference": "ATplDJZgTpsIsQKWtXtPmX6iKoHBd32DUAmWYvTXQgbwlW8p_UPWHXREL1cQqSCwului8m7ZyU573wPQvtaIvf4jy4dt31aQjoBKm6sDqRB_TN8x5z0Pgdep9QosgCu9dsQ5q-dHH98_bgRKGDGAW70y7Q_QTXgrAGtivq3wot6j0EV3G-9U",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJ3zD5aphXezURMxCnPZC5XoI",
+                "plus_code": {
+                    "compound_code": "94FP+MH 성남시 경기도",
+                    "global_code": "8Q9994FP+MH"
+                },
+                "rating": 4.4,
+                "reference": "ChIJ3zD5aphXezURMxCnPZC5XoI",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 19,
+                "vicinity": "성남시 분당구 서현동 불정로 379 1 층 102-1호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3959141,
+                        "lng": 126.9483321
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.39726392989273,
+                            "lng": 126.9496819298927
+                        },
+                        "southwest": {
+                            "lat": 37.39456427010729,
+                            "lng": 126.9469822701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 평촌샛별점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "place_id": "ChIJ78X0gX5hezUROydbg6ZOfys",
+                "plus_code": {
+                    "compound_code": "9WWX+98 안양시 경기도",
+                    "global_code": "8Q989WWX+98"
+                },
+                "rating": 0,
+                "reference": "ChIJ78X0gX5hezUROydbg6ZOfys",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 0,
+                "vicinity": "안양시 동안구 동안로 194"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3231428,
+                        "lng": 127.0961093
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.32449262989273,
+                            "lng": 127.0974591298927
+                        },
+                        "southwest": {
+                            "lat": 37.32179297010729,
+                            "lng": 127.0947594701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 수지구청역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 2080,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/107646521910843164188\">David Lim</a>"
+                        ],
+                        "photo_reference": "ATplDJYjAGO0ViCz1MU1cHYSr9SXCwQ4s05OPQmf8U0c-4k3O0V2bhdPrs99kadi17BLZeyxTj5z73hRByvWh2Cn_yufnty0VTzy9QaWFrYLaYEg4k9NRJ3k46ojd0BVyT169ycwxI_hohdmEJlyipRbuXMcf_8kOIJdZa7e1Q2XD0ASxqfr",
+                        "width": 4160
+                    }
+                ],
+                "place_id": "ChIJv6eOK0lbezURx4LrZQyRx3w",
+                "plus_code": {
+                    "compound_code": "83FW+7C 수지구 경기도 용인시",
+                    "global_code": "8Q9983FW+7C"
+                },
+                "price_level": 1,
+                "rating": 4,
+                "reference": "ChIJv6eOK0lbezURx4LrZQyRx3w",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 10,
+                "vicinity": "용인시 수지구 풍덕천동 719-2"
+            }
+        ],
+        "status": "OK"
+    },
+    {
+        "html_attributions": [],
+        "next_page_token": "ATplDJZ49yu9N00pGXGA4Y9IaIWu7jYjWlly8rAY5I_yAOCKIWPrG1o4X9uALmw23GrHv1qTqGbJMXmxOI-W30OOX_RvDLYn6kCXYYQeGkb4_MUsZlbHZo9tcLxwGyTIqrq3nfxUVl8Pcd31OzHu9qVjhfV2wBw97gd2zCo7WtX3059NbEjT_iggL6BpRUtLKj7sJfAp-MfCxdCy1BgufakjFRta3TKvu-EKXfZ0HIPxef-E_EIZsMNMaL9azFIC-af5QKy6xvnRcuV6EG7bd_qlSaCq1vIlQye7awKFOMTYtaX4D_0nwE5bc3yUawx4LCT24bnenJdp3qF8KH4RNBsjcQw8OUT-Um63nrdrHv2JolPtVnvRxnk10Q8EgxBtc2hgIKDaZMbpX6WTcgUcZjoAbfKH4cSu_42Q6w4iLUP_GWPkLN6JOFWgD35TuuKhwuj9fZY",
+        "results": [
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2462873,
+                        "lng": 127.0601598
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.24763712989272,
+                            "lng": 127.0615096298927
+                        },
+                        "southwest": {
+                            "lat": 37.24493747010728,
+                            "lng": 127.0588099701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 망포역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110812888533794064091\">한래희</a>"
+                        ],
+                        "photo_reference": "ATplDJZ2vyjum5KwJLPmlTEx6UP56aHRh7ceu3B2Tn9hLHP9Ew8TA7Qae0VYwTVVTpgOPLsI2q-CqNw2kV5gbV3ms4Dxnq1Sz6Hqfp_JSQDlFpTdHdyX-bNSo097NvgBvqIOVF-WCYmKZIpAYlONQASrOJ9hgIe1tSAq_8Eq-gt6QmiTLuS1",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJQ5AqjXhFezUROpXWxhz7-ss",
+                "plus_code": {
+                    "compound_code": "63W6+G3 수원시 경기도",
+                    "global_code": "8Q9963W6+G3"
+                },
+                "price_level": 1,
+                "rating": 4.4,
+                "reference": "ChIJQ5AqjXhFezUROpXWxhz7-ss",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 95,
+                "vicinity": "수원시 영통구 영통동 덕영대로 1547"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2527663,
+                        "lng": 127.0751901
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.25411612989272,
+                            "lng": 127.0765399298927
+                        },
+                        "southwest": {
+                            "lat": 37.25141647010728,
+                            "lng": 127.0738402701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수원영통점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110177267972750236572\">JaeYeon Cho</a>"
+                        ],
+                        "photo_reference": "ATplDJbYJSp15UTWC9GTzIkbPDXJ5v0cMx1niMv3FE4bzOT5OrytAD96qhI8QmVPdi25ywUNhMP4SUybjaux-Qq0RtdWByBEgPzDIuA0plCCoDTFcAjm6xLf0rlfRcQMTrUzfwzD4pY9AdN84nNkHGfaBzyZcjtM6-J7Fk_AtvZL2YytEbRK",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJAdZ6ZNpEezURavdSffFTL2U",
+                "plus_code": {
+                    "compound_code": "733G+43 수원시 경기도",
+                    "global_code": "8Q99733G+43"
+                },
+                "price_level": 1,
+                "rating": 3.9,
+                "reference": "ChIJAdZ6ZNpEezURavdSffFTL2U",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 31,
+                "vicinity": "수원시 영통구 영통동 998-8번지 KR 키라레스토아 1층 106 106-1호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3775038,
+                        "lng": 127.112786
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37885362989272,
+                            "lng": 127.1141358298927
+                        },
+                        "southwest": {
+                            "lat": 37.37615397010728,
+                            "lng": 127.1114361701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 수내로데오점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "place_id": "ChIJ99bJP-NZezURxJezwdGF-ss",
+                "plus_code": {
+                    "compound_code": "94H7+24 성남시 경기도",
+                    "global_code": "8Q9994H7+24"
+                },
+                "rating": 4.2,
+                "reference": "ChIJ99bJP-NZezURxJezwdGF-ss",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 10,
+                "vicinity": "성남시 분당구 KR 백현로101번길 17 초림프라자번영회 309호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3191157,
+                        "lng": 127.0882331
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.32046552989272,
+                            "lng": 127.0895829298927
+                        },
+                        "southwest": {
+                            "lat": 37.31776587010727,
+                            "lng": 127.0868832701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수지신정마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/101834330769689830103\">JU SEOP KWON</a>"
+                        ],
+                        "photo_reference": "ATplDJZBamUQTjmfPl4k3EzlrZ0Po2fc2vzCTDrw2KdXnmtP6qvQJS5gavwIycCTXn9K-Zgx3hTax22udtjl5_FubZmappPWkYyzBhFhycONdJm7hP2daqEWoegPEZTbfLQRZztDQjMMb0cW4QS7KEVQ0VMT7qHV9FwsqFE4Fiw79XjSgQp3",
+                        "width": 4000
+                    }
+                ],
+                "place_id": "ChIJEUkAcR1bezURf6hwXWuf0Kk",
+                "plus_code": {
+                    "compound_code": "839Q+J7 수지구 경기도 용인시",
+                    "global_code": "8Q99839Q+J7"
+                },
+                "rating": 4.3,
+                "reference": "ChIJEUkAcR1bezURf6hwXWuf0Kk",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 26,
+                "vicinity": "용인시 수지구 정평로 34-2 메가커피 1층"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3621309,
+                        "lng": 127.1061073
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.36348072989272,
+                            "lng": 127.1074571298927
+                        },
+                        "southwest": {
+                            "lat": 37.36078107010727,
+                            "lng": 127.1047574701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 정자엠코점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/113387245063182735770\">우일상</a>"
+                        ],
+                        "photo_reference": "ATplDJZNKqb9ZSKm3oKT9IfoyAjOzPjcVXN2CdCqOCmiVkfNRXRdSkNIRPXqsmJ-LkpRGnA7EGA1xA9e05L36I8M74BmTtOGAaqkFHqdzF18h0fozi4-S_DBktjXADRq1cU8Ee8vosFeIxnAR7WheJ4CUz84qKDJTTGo5hl4QkuU0pwiJsLm",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJd1LV44NZezURwW_4I4a9r5Y",
+                "plus_code": {
+                    "compound_code": "9464+VC 성남시 경기도",
+                    "global_code": "8Q999464+VC"
+                },
+                "rating": 4,
+                "reference": "ChIJd1LV44NZezURwW_4I4a9r5Y",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 9,
+                "vicinity": "성남시 분당구 정자동 166-2"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.4116217,
+                        "lng": 127.1263444
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.41297152989272,
+                            "lng": 127.1276942298927
+                        },
+                        "southwest": {
+                            "lat": 37.41027187010727,
+                            "lng": 127.1249945701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 야탑점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/113600928376560074424\">안은찬</a>"
+                        ],
+                        "photo_reference": "ATplDJagwnmsfGKjqsowdP9EZUwWxxZqzgHPtyq04ja9GQhd24oT3Ahzivtcvx6_uGJDtfv_di0CMjqhNpL2fVf6eTMa1BP6iexcs8wTtz_5MjAdgrwuTfxad-pbLNXvLiHMKbG4hpIL1fUXYS2YAUvRwhSdzS934UQxoLL9bYiN80rLul6q",
+                        "width": 4032
+                    }
+                ],
+                "place_id": "ChIJTZyDW3WofDURLanUQBh7n1Y",
+                "plus_code": {
+                    "compound_code": "C46G+JG 성남시 경기도",
+                    "global_code": "8Q99C46G+JG"
+                },
+                "price_level": 1,
+                "rating": 4.1,
+                "reference": "ChIJTZyDW3WofDURLanUQBh7n1Y",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 33,
+                "vicinity": "성남시 분당구 야탑로69번길 21"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3690417,
+                        "lng": 127.1125669
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37039152989271,
+                            "lng": 127.1139167298927
+                        },
+                        "southwest": {
+                            "lat": 37.36769187010727,
+                            "lng": 127.1112170701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 분당느티마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110372297078188535950\">Hyerim Kwon</a>"
+                        ],
+                        "photo_reference": "ATplDJYW8JXEACqFZ-jIMafnJ_SapH8k_jabYcV1ygXy2bdI7FEvA0QzMN4DcuwRu7n27xEgP8cAh1nfHGVrMZrYFfm58c56V98Gq3VcSRjFdwV1LQ0Tl0583vlrWkk8YZy5SkoDk-17SJZEvTyuBWKSobaHC4lX0Ll44W6YK5VzFLLOmK2K",
+                        "width": 4000
+                    }
+                ],
+                "place_id": "ChIJ_eElTgFZezUR9Y0L34f6fNc",
+                "plus_code": {
+                    "compound_code": "9497+J2 성남시 경기도",
+                    "global_code": "8Q999497+J2"
+                },
+                "rating": 4.1,
+                "reference": "ChIJ_eElTgFZezUR9Y0L34f6fNc",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 30,
+                "vicinity": "성남시 분당구 정자동 느티로69번길 8"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.4116071,
+                        "lng": 127.1341594
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.41295692989272,
+                            "lng": 127.1355092298927
+                        },
+                        "southwest": {
+                            "lat": 37.41025727010727,
+                            "lng": 127.1328095701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 야탑중앙점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 2000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/117810987496712210586\">Benjamin Jang</a>"
+                        ],
+                        "photo_reference": "ATplDJZjhH3YVgnzr30lEjSqBL2V73fbxthaybxwhuhzUCHpiKPumIoYYD8G5ECS9uToGRjokg96xuQJpGNnzkkkYZknhpWP0On0CsiDJw2fi6DoDbPIwB37VH9x-N0nVUEl3Gm2rVO8EEk-wMqKtdnS09g7mUkTjePIclg-XqHoBdmWQt_G",
+                        "width": 3000
+                    }
+                ],
+                "place_id": "ChIJl-KpY7mpfDUR7nOjs4XUNJc",
+                "plus_code": {
+                    "compound_code": "C46M+JM 성남시 경기도",
+                    "global_code": "8Q99C46M+JM"
+                },
+                "price_level": 1,
+                "rating": 4.1,
+                "reference": "ChIJl-KpY7mpfDUR7nOjs4XUNJc",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 55,
+                "vicinity": "성남시 분당구 야탑3동 매화로 46"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.4052205,
+                        "lng": 127.1229325
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.40657032989272,
+                            "lng": 127.1242823298927
+                        },
+                        "southwest": {
+                            "lat": 37.40387067010727,
+                            "lng": 127.1215826701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 분당아름마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/115931857442827414452\">이태희</a>"
+                        ],
+                        "photo_reference": "ATplDJZPVeMPy3LQK_zKdlX1Tk9qNlViMzECnx7hU_3FgTzylKtcSD8ViITSb13J_VWj3YlN13V_xQ0xIGF1QQM58M2c2Yd6LBdfc5ju78RyTBxRM3WAPUF_i_WfRtw6MKnGfiZ-2qC-FaCRqpXDtoyYQvjLGaXzKItwqodI_CqjIK9w5rQ",
+                        "width": 3000
+                    }
+                ],
+                "place_id": "ChIJaaapAOOnfDURkZCqbiCgZbE",
+                "plus_code": {
+                    "compound_code": "C44F+35 성남시 경기도",
+                    "global_code": "8Q99C44F+35"
+                },
+                "rating": 3.6,
+                "reference": "ChIJaaapAOOnfDURkZCqbiCgZbE",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 15,
+                "vicinity": "성남시 분당구 이매동 판교로 442 1층"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3891744,
+                        "lng": 127.0896953
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.39052422989273,
+                            "lng": 127.0910451298927
+                        },
+                        "southwest": {
+                            "lat": 37.38782457010729,
+                            "lng": 127.0883454701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 판교원마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 1920,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/101565121413456196430\">Peter RYU</a>"
+                        ],
+                        "photo_reference": "ATplDJYx9OWusBrKBxNqtpISB8XMibbDTqvc77Ml7MsDItjK_adxR4gxW71HRRL9qGuJHq8ZCiiO6Pat1Rra9M7lVfGu_THREHIiOjpAvbPsYu1Ph3Gz-io8T2bYOY-O3CnbtLhfy5HGNa7b4azRJ7ze4eMGp3zw59vDgiz_ecTrn6b8GB1I",
+                        "width": 1080
+                    }
+                ],
+                "place_id": "ChIJF3uaco9ZezURD4j6J1HVK24",
+                "plus_code": {
+                    "compound_code": "93QQ+MV 성남시 경기도",
+                    "global_code": "8Q9993QQ+MV"
+                },
+                "rating": 3.7,
+                "reference": "ChIJF3uaco9ZezURD4j6J1HVK24",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 3,
+                "vicinity": "성남시 분당구 판교동 운중로 242"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.37939710000001,
+                        "lng": 127.1160909
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.38074692989272,
+                            "lng": 127.1174407298927
+                        },
+                        "southwest": {
+                            "lat": 37.37804727010728,
+                            "lng": 127.1147410701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 수내역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/109079797835098915946\">Byoung woo Kim</a>"
+                        ],
+                        "photo_reference": "ATplDJbEYYupWG240ljDsym_BcE8em3PEzrq-chOVZvS3KeHT2fDaUxWumaTBEiXhNZ2BNEUIHAujajGTh056cELAhlrF23PdNC0nBkwb6yneB8uDfB9jhU30sQk7OuIHyuxJTMUwDiUelcep5IyRpC13XgBF56wtoGa3KnOa9dLMkSk_r9i",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJ8Ur_4Y5ZezURXVvytgTQIVo",
+                "plus_code": {
+                    "compound_code": "94H8+QC 성남시 경기도",
+                    "global_code": "8Q9994H8+QC"
+                },
+                "rating": 3.8,
+                "reference": "ChIJ8Ur_4Y5ZezURXVvytgTQIVo",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 32,
+                "vicinity": "성남시 분당구 수내1동 황새울로258번길 32"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2593571,
+                        "lng": 127.0439558
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.26070692989272,
+                            "lng": 127.0453056298927
+                        },
+                        "southwest": {
+                            "lat": 37.25800727010728,
+                            "lng": 127.0426059701072
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수원영통구청점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 748,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/107755523776108941644\">A Google User</a>"
+                        ],
+                        "photo_reference": "ATplDJb7XBxB9clFXNjHMuqQUYxYcllI7f9pD6m6NTOQdUeKsFR2DfbJ_OzCSe_UunZBP27CTGWczTDzOUng266jfYJmdqbU3JyBGUHQh8hS9Bc4jwhtZqCdV-z0VkyS_PQAq2HC3ffaCVpmBofpwpBcGQvrzKXIc3P96MCnqfOoBZC1YPCE",
+                        "width": 1011
+                    }
+                ],
+                "place_id": "ChIJIeM9sFNFezURAthCFrheUJw",
+                "plus_code": {
+                    "compound_code": "725V+PH 수원시 경기도",
+                    "global_code": "8Q99725V+PH"
+                },
+                "price_level": 1,
+                "rating": 4.1,
+                "reference": "ChIJIeM9sFNFezURAthCFrheUJw",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 68,
+                "vicinity": "수원시 영통구 효원로 387"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2558958,
+                        "lng": 127.0747189
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.25724562989272,
+                            "lng": 127.0760687298927
+                        },
+                        "southwest": {
+                            "lat": 37.25454597010727,
+                            "lng": 127.0733690701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 영통청명점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110177267972750236572\">JaeYeon Cho</a>"
+                        ],
+                        "photo_reference": "ATplDJb8Nx8bv7mFPpRkvmhRdQoLthtemcTOfHJFTwaWh2b6rLfsamjikAAlyDzY-LjbsnKzLUkJXsQOX6GeZeMy_RVTwvmfqqzwqENe440bljdw09shTKrlgnryexxoI1R2C36VwJRaOIjUJmsCjkCjeFiRJ2JXyAiDhys51yj--O7PenOF",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJpfdFfENFezURfcpzT7nILFs",
+                "plus_code": {
+                    "compound_code": "734F+9V 수원시 경기도",
+                    "global_code": "8Q99734F+9V"
+                },
+                "price_level": 1,
+                "rating": 4.7,
+                "reference": "ChIJpfdFfENFezURfcpzT7nILFs",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 3,
+                "vicinity": "수원시 영통구 봉영로 1623 드림피아빌딩 1층 108호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3206784,
+                        "lng": 127.1125189
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.32202822989272,
+                            "lng": 127.1138687298927
+                        },
+                        "southwest": {
+                            "lat": 37.31932857010728,
+                            "lng": 127.1111690701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 죽전보정점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3468,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/111436391052113054035\">A Google User</a>"
+                        ],
+                        "photo_reference": "ATplDJZ_zx7XoRK8zpFJhGCuO8Ezyh_IA0XiIAn8F5DYMeHTw6qgN0TrhiSCJEtvXm9D6Da8S1aDr3JMGdj3VTA5Fb1QsOa7_LZYAKRnVio-_SyDAE-9M0Yt0fx3dHrBsimb0WTVyLymYnkV0zuc5TVaJELu6DR2LhkG39urMGnLiNeX2gAi",
+                        "width": 4624
+                    }
+                ],
+                "place_id": "ChIJJSiW-BxaezURia8QoIidtPo",
+                "plus_code": {
+                    "compound_code": "84C7+72 기흥구 경기도 용인시",
+                    "global_code": "8Q9984C7+72"
+                },
+                "rating": 3.7,
+                "reference": "ChIJJSiW-BxaezURia8QoIidtPo",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 7,
+                "vicinity": "용인시 기흥구 죽전로 33 이데아프라자 1층"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.2655274,
+                        "lng": 127.0773225
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.26687722989272,
+                            "lng": 127.0786723298927
+                        },
+                        "southwest": {
+                            "lat": 37.26417757010728,
+                            "lng": 127.0759726701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 수원황골마을점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/112626304606551288341\">Arvind Tirkey</a>"
+                        ],
+                        "photo_reference": "ATplDJZD68F24Tk_k4xdvdH_dKm-scy-mpuF0rChnSJ2JVu82JZJF51eKeLQ8HoJCjrTASFkHTukVHkK80HpTMcXhLDkQxc2TBF1s3-no8_hz6PRYo8rfi9UsoEFna31Jc8WVMMKapdZDtCm0V1W0PddGisD6emQPTtVHr9KHFeboQFemyUK",
+                        "width": 4032
+                    }
+                ],
+                "place_id": "ChIJh6oxTV1bezURB5yLbfd2Ik4",
+                "plus_code": {
+                    "compound_code": "738G+6W 수원시 경기도",
+                    "global_code": "8Q99738G+6W"
+                },
+                "price_level": 1,
+                "rating": 4.4,
+                "reference": "ChIJh6oxTV1bezURB5yLbfd2Ik4",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 104,
+                "vicinity": "수원시 영통구 영통로 523 1층"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3859541,
+                        "lng": 127.1249861
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.38730392989272,
+                            "lng": 127.1263359298927
+                        },
+                        "southwest": {
+                            "lat": 37.38460427010728,
+                            "lng": 127.1236362701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 서현역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4656,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110679810269452968953\">adrian suh</a>"
+                        ],
+                        "photo_reference": "ATplDJaUTV2wbqcFeaf4tsxlw2saBYTQVrZJ1m3IDM4DK52x9adpxMtSj_Zb6nL3ksfBCWK4Vux3AQAeSWj-NhPHaRzvdp2tWuzpH-4zLwgkl5ZZ6tFGfqBnKrS-YB532Dx7HOL2GgFoP1kS5K0xbshfqw2PvY048OxPK93pxbRUdy7S8xs2",
+                        "width": 3492
+                    }
+                ],
+                "place_id": "ChIJi4mq6UFZezURpi-B7F8Us38",
+                "plus_code": {
+                    "compound_code": "94PF+9X 성남시 경기도",
+                    "global_code": "8Q9994PF+9X"
+                },
+                "price_level": 1,
+                "rating": 4.1,
+                "reference": "ChIJi4mq6UFZezURpi-B7F8Us38",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 13,
+                "vicinity": "성남시 분당구 서현동 황새울로360번길 26"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3497168,
+                        "lng": 127.1096663
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.35106662989272,
+                            "lng": 127.1110161298927
+                        },
+                        "southwest": {
+                            "lat": 37.34836697010728,
+                            "lng": 127.1083164701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 미금역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/114599657338794635581\">백효운</a>"
+                        ],
+                        "photo_reference": "ATplDJZn_KGcgW05Dv2fFnqH3jvUHnBYaGaak3B5mDkP6a8eyA4GapPhXP7-9q9qZ7S_y8_L6a4erLgmZoyxx8GUMV0d5juEL2la_ZvoalOtv3lkVW1vMrSffcUKXWKehFE4ojEVoqCdiiIprUNDjuztG3Xr1pSdvatZf4ywPLW0FKYfCch3",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJ45zxxcVZezURuOpkymdaUlM",
+                "plus_code": {
+                    "compound_code": "84X5+VV 성남시 경기도",
+                    "global_code": "8Q9984X5+VV"
+                },
+                "rating": 4.2,
+                "reference": "ChIJ45zxxcVZezURuOpkymdaUlM",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 30,
+                "vicinity": "성남시 분당구 구미1동 돌마로 68 프라자 201"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3742408,
+                        "lng": 127.1364052
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.37559062989272,
+                            "lng": 127.1377550298927
+                        },
+                        "southwest": {
+                            "lat": 37.37289097010727,
+                            "lng": 127.1350553701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 분당효자점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/115916063479680896389\">남윤재</a>"
+                        ],
+                        "photo_reference": "ATplDJbaiJMR_mET3H7TXxjubaUiwDu9wNNE3L6XQyYDgPK1IC-aOztv7ytAT3QyehLm5rvKat8DOspwAIvYMQU2n_M1YkZ50ASAx9BnDfrrnJOiGOK7Lf7I0ZaX_wWFLG62kfgEt-4b7pRGmeosPOjk9NzpDrqw8WjlCxLgs_Z9M1pf8sA6",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJ3zD5aphXezURMxCnPZC5XoI",
+                "plus_code": {
+                    "compound_code": "94FP+MH 성남시 경기도",
+                    "global_code": "8Q9994FP+MH"
+                },
+                "rating": 4.4,
+                "reference": "ChIJ3zD5aphXezURMxCnPZC5XoI",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "store",
+                    "establishment"
+                ],
+                "user_ratings_total": 19,
+                "vicinity": "성남시 분당구 서현동 불정로 379 1 층 102-1호"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3959141,
+                        "lng": 126.9483321
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.39726392989273,
+                            "lng": 126.9496819298927
+                        },
+                        "southwest": {
+                            "lat": 37.39456427010729,
+                            "lng": 126.9469822701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가MGC커피 평촌샛별점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "place_id": "ChIJ78X0gX5hezUROydbg6ZOfys",
+                "plus_code": {
+                    "compound_code": "9WWX+98 안양시 경기도",
+                    "global_code": "8Q989WWX+98"
+                },
+                "rating": 0,
+                "reference": "ChIJ78X0gX5hezUROydbg6ZOfys",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 0,
+                "vicinity": "안양시 동안구 동안로 194"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3231428,
+                        "lng": 127.0961093
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.32449262989273,
+                            "lng": 127.0974591298927
+                        },
+                        "southwest": {
+                            "lat": 37.32179297010729,
+                            "lng": 127.0947594701073
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+                "name": "메가커피 수지구청역점",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 2080,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/107646521910843164188\">David Lim</a>"
+                        ],
+                        "photo_reference": "ATplDJZOPwOZBNFFv_NkanYfJs5T_IQDjHiXu5FvDmf8vR-zE6Zfu8m0pACGB7gobOwO-jha-e6FzD5WQTTCantg0kKSvIzYryIPJvJexT8HQ5q_R-gvks-bYlWq27vuTiIcIYs35Ermerq2gD_7ocdVfVmfBIVo2JMTYbQEQk2KO8EoJX8_",
+                        "width": 4160
+                    }
+                ],
+                "place_id": "ChIJv6eOK0lbezURx4LrZQyRx3w",
+                "plus_code": {
+                    "compound_code": "83FW+7C 수지구 경기도 용인시",
+                    "global_code": "8Q9983FW+7C"
+                },
+                "price_level": 1,
+                "rating": 4,
+                "reference": "ChIJv6eOK0lbezURx4LrZQyRx3w",
+                "scope": "GOOGLE",
+                "types": [
+                    "cafe",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 10,
+                "vicinity": "용인시 수지구 풍덕천동 719-2"
+            }
+        ],
+        "status": "OK"
     }
 ]

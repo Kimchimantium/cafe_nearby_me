@@ -11,10 +11,14 @@ from pprint import pprint
 
 # TODO
 # make sqlalchemy save the API results + user added info
-# (form submit) btn pressed, locate map according to it js ✓
+# carousel for mycafes.html ✓
+# starbucks color theme for mycafes.html ✓
+# table of cafe_db in mycafes.html
+
+# form to update cafe info in mycafes.html
+
 # CSRF token
-# make 'My Cafes' page ✓
-# make navbar for header ✓
+
 
 
 # ===== App Setting =====
@@ -33,14 +37,9 @@ class Cafe(db.Model):
     __tablename__ = 'Korea'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
-    rating = db.column(db.String(30))
+    rating = db.Column(db.String(30))
     map_url = db.Column(db.String(250), unique=True)
-    img_url = db.Column(db.String(250), unique=True)
     location = db.Column(db.String(50), unique=True, nullable=False)
-    has_sockets = db.Column(db.Boolean)
-    has_toilet = db.Column(db.Boolean)
-    has_wifi = db.Column(db.Boolean)
-    can_take_calls = db.Column(db.Boolean)
     seats = db.Column(db.String(250))
     coffee_price = db.Column(db.String(250))
 
@@ -73,6 +72,7 @@ def create_db():
     """ Make new db """
     with app.app_context():
         db.create_all()
+create_db()
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -126,7 +126,11 @@ def home():
 
 @app.route('/mycafes', methods=['GET'])
 def my_cafes():
-    return render_template('mycafes.html')
+    cafe_db = db.session.query(Cafe).all()
+    for cafe in cafe_db:
+        print(cafe)
+    return render_template('mycafes.html',
+                           cafe_db=cafe_db)
 
 
 if __name__ == '__main__':

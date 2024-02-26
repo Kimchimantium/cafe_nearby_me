@@ -1,10 +1,49 @@
 {% include 'header.html' %}
 
 {% block content %}
-
-<div class="container bg-light">
-    <h1 class="display-1 text-success">My Cafes</h1>
-    <h2 class="display-6 text-warning">Your Saved Cafes</h2>
+<!--title section-->
+<div class="container bg-starbucks-2">
+    <div class="container bg-starbucks-2">
+        <h1 class="display-1 text-starbucks-0">My Cafes</h1>
+        <h2 class="display-6 text-starbucks-1">Your Saved Cafes</h2>
+    </div>
+    <!--carousel section-->
+    <div class="container bg-starbucks-0">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                {% for cafe in cafe_db %}
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ loop.index0 }}"
+                        {% if
+                        loop.index== 1 %}class="active" aria-current="true" {% endif %}
+                        aria-label="Cafe {{loop.index }}"></button>
+                {% endfor %}
+            </div>
+            <div class="carousel-inner">
+                {% for cafe in cafe_db %}
+                <div class="carousel-item {% if loop.index == 1 %}active{% endif %} text-center text-light fw-light">
+                    <p><span class="text-starbucks-2">NAME:</span> {{ cafe.name }}</p>
+                    <p><span class="text-starbucks-2">RATING:</span> {{ cafe.rating }}</p>
+                    <p><span class="text-starbucks-2">MAP:</span> <a href="{{ cafe.map_url }}"><i class="fa-regular fa-map" style="color: #f8f9fa"></i></a></p>
+                    <p><span class="text-starbucks-2">LOCATION:</span> {{ cafe.location }}</p>
+                    <p><span class="text-starbucks-2">SEATS:</span> {{ cafe.seats }}</p>
+                    <p><span class="text-starbucks-2">PRICE:</span> {{ cafe.coffee_price }}</p>
+                    <br>
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    {% for cafe in ca
 </div>
 
 

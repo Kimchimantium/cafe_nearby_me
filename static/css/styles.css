@@ -11749,3 +11749,33 @@ a:hover {
     align-items: center;
     height: 100%; /* Ensure it takes full height of the cell */
 }
+.bg-starbucks-0 {
+    background-color: #016843;
+}
+.bg-starbucks-1 {
+    background-color: #FFFCFC;
+}
+.bg-starbucks-2 {
+    background-color: #EAC784;
+}
+.bg-starbucks-3 {
+    background-color: #362415;
+}
+.bg-starbucks-4 {
+    background-color: #604C4C;
+}
+.text-starbucks-0 {
+    color: #016843;
+}
+.text-starbucks-1 {
+    color: #FFFCFC;
+}
+.text-starbucks-2 {
+    color: #EAC784;
+}
+.text-starbucks-3 {
+    color: #362415;
+}
+.text-starbucks-4 {
+    color: #604C4C;
+}
