@@ -141,6 +141,20 @@ function submitForm(event, cafeId) {
         console.error('Error:', error);
     });
 }
+$(document).ready(function(){
+    // Listen for click events on elements with the class 'add-cafe'
+    $('.add-cafe').click(function(e){
+        e.preventDefault(); // Prevent the default anchor action
 
+        // Change the class of the <i> child element
+        $(this).find('i').removeClass('fa-solid fa-plus').addClass("fa-regular fa-flag");
+
+        // Optionally, you can also change the anchor class to prevent re-clicks or for styling
+        $(this).removeClass('add-cafe').addClass('cafe-added');
+
+        // Your logic to handle the addition of the cafe goes here
+        // For example, sending data to server, updating the interface, etc.
+    });
+});
 
 

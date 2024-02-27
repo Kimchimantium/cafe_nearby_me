@@ -20,14 +20,18 @@
             </div>
             <div class="carousel-inner">
                 {% for cafe in cafe_db %}
-                <div class="carousel-item {% if loop.index == 1 %}active{% endif %} text-center text-light fw-light mt-3 mb-3">
-                    <p><span class="text-starbucks-gold">NAME:</span> {{ cafe.name }}</p>
-                    <p><span class="text-starbucks-gold">RATING:</span> {{ cafe.rating }}</p>
-                    <p><span class="text-starbucks-gold">MAP:</span> <a href="{{ cafe.map_url }}"><i
-                            class="fa-regular fa-map" style="color: #f8f9fa"></i></a></p>
-                    <p><span class="text-starbucks-gold">LOCATION:</span> {{ cafe.location }}</p>
-                    <p><span class="text-starbucks-gold">SEATS:</span> {{ cafe.seats }}</p>
-                    <p><span class="text-starbucks-gold">PRICE:</span> {{ cafe.coffee_price }}</p>
+                <div class="carousel-item {% if loop.index == 1 %}active{% endif %} text-light fw-light mt-3 mb-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-box">
+                            <p><span class="text-starbucks-gold">NAME:</span> {{ cafe.name }}</p>
+                            <p><span class="text-starbucks-gold">RATING:</span> {{ cafe.rating }}</p>
+                            <p><span class="text-starbucks-gold">MAP:</span> <a href="{{ cafe.map_url }}"><i
+                                    class="fa-regular fa-map" style="color: #f8f9fa"></i></a></p>
+                            <p><span class="text-starbucks-gold">LOCATION:</span> {{ cafe.location }}</p>
+                            <p><span class="text-starbucks-gold">SEATS:</span> {{ cafe.seats }}</p>
+                            <p><span class="text-starbucks-gold">PRICE:</span> {{ cafe.coffee_price }}</p>
+                        </div>
+                    </div>
                     <br>
                 </div>
                 {% endfor %}
@@ -77,33 +81,42 @@
                        data-bs-target="#collapseEdit-{{ loop.index }}" aria-expanded="false"
                        aria-controls="collapseEdit-{{ loop.index }}"><i
                         class="fa-regular fa-pen-to-square"></i></a>
+                    <a href="/mycafes?cafe_id={{ cafe.id }}"><i class="fa-solid fa-trash"></i></a>
                 </td>
             </tr>
             {% endfor %}
             </tbody>
         </table>
     </div>
+    <!--    table data editing section    -->
     {% for cafe in cafe_db %}
     <div class="collapse" id="collapseEdit-{{ loop.index }}">
-        <form action="{{ url_for('my_cafes') }}" method="POST" onsubmit="submitForm(event, '{{ cafe.id }}';" class="row">
+        <form action="{{ url_for('my_cafes') }}" method="POST" onsubmit="submitForm(event, '{{ cafe.id }}';"
+              class="row">
             <input type="hidden" name="cafe_id" value="{{ cafe.id }}">
             <div class="col-12">
-                <input type="text" name="name" class="form-control" placeholder="Name: {{ cafe.name }}" aria-label="Name">
+                <input type="text" name="name" class="form-control" placeholder="Name: {{ cafe.name }}"
+                       aria-label="Name">
             </div>
             <div class="col-12">
-                <input type="text" name="rating" class="form-control" placeholder="Rating: {{ cafe.rating }}" aria-label="Rating">
+                <input type="text" name="rating" class="form-control" placeholder="Rating: {{ cafe.rating }}"
+                       aria-label="Rating">
             </div>
             <div class="col-12">
-                <input type="text" name="map_url" class="form-control" placeholder="Map: {{ cafe.map_url }}" aria-label="Map">
+                <input type="text" name="map_url" class="form-control" placeholder="Map: {{ cafe.map_url }}"
+                       aria-label="Map">
             </div>
             <div class="col-12">
-                <input type="text" name="location" class="form-control" placeholder="Location: {{ cafe.location }}" aria-label="Location">
+                <input type="text" name="location" class="form-control" placeholder="Location: {{ cafe.location }}"
+                       aria-label="Location">
             </div>
             <div class="col-6">
-                <input type="text" name="seats" class="form-control" placeholder="Seats: {{ cafe.seats }}" aria-label="Seats">
+                <input type="text" name="seats" class="form-control" placeholder="Seats: {{ cafe.seats }}"
+                       aria-label="Seats">
             </div>
             <div class="col-6">
-                <input type="text" name="coffee_price" class="form-control" placeholder="Price: {{ cafe.coffee_price }}" aria-label="Price">
+                <input type="text" name="coffee_price" class="form-control" placeholder="Price: {{ cafe.coffee_price }}"
+                       aria-label="Price">
             </div>
             <button type="submit" class="btn btn-primary">Save Change</button>
         </form>

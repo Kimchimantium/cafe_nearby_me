@@ -10,15 +10,15 @@ from geocode import GetGeo
 from pprint import pprint
 
 # TODO
-# make sqlalchemy save the API results + user added info
-# table of cafe_db in mycafes.html ✓
-# form to update cafe info in mycafes.html ✓
-# sql update when form submitted ✓
-# collapsing js editor to edit cafe_db data ✓
-
-# sqldb rating from emoji to float.
-
+# sqldb rating from emoji to float. ✓
+# annotate sections html, py ✓
+# navbar brand from MENU to HOME ✓
+# db delete func in mycafes.html ✓
+# mycafes.html carousel text align type to justify ✓
+# change js google map default to place input's placeholder place
 # CSRF token
+# make sqlalchemy save the API results + user added info
+# change index.html plus btn to check btn when added
 
 
 
@@ -33,7 +33,7 @@ Bootstrap(app)
 # ===== Custom Class Instance =====
 gg = GetGeo()
 
-
+# SQLDB for User Cafe Save
 class Cafe(db.Model):
     __tablename__ = 'Korea'
     id = db.Column(db.Integer, primary_key=True)
@@ -44,7 +44,7 @@ class Cafe(db.Model):
     seats = db.Column(db.String(250))
     coffee_price = db.Column(db.String(250))
 
-
+# Form for index.html's Cafe Search
 class CafeForm(FlaskForm):
     location = StringField(label='Where to Search',
                            validators=[validators.DataRequired()],
@@ -73,9 +73,9 @@ def create_db():
     """ Make new db """
     with app.app_context():
         db.create_all()
-create_db()
 
 
+# Flask App
 @app.route('/', methods=['GET', 'POST'])
 def home():
     key = os.getenv('GOOGLE_API_KEY')
@@ -84,7 +84,7 @@ def home():
     form = CafeForm()
     location, result = None, []
     # Get Form Data
-    results, result_names, result_emojis, result_vicinities, results_zipped = [], [], [], [], []
+    results, result_names, result_ratings, result_emojis, result_vicinities, results_zipped = [], [], [], [], [], []
     if form.validate_on_submit():
         location = form.location.data
         type_ = form.type.data
@@ -98,13 +98,15 @@ def home():
         for result in results:
             result_names.append(result['name'])
             result_vicinities.append(result['vicinity'])
+            result_ratings.append(result['rating'])
             rating_emojis = '😶' if result['rating'] == 0 else '⭐️' * int(result['rating'])
             result_emojis.append(rating_emojis)
-        results_zipped = list(zip(result_names, result_emojis, result_vicinities))
+        results_zipped = list(zip(result_names, result_ratings, result_emojis, result_vicinities))
 
     # Get url args data
     if request.method == 'POST' and request.is_json:
         data = request.get_json()
+        print(data)
         selected_name = data.get('name')
         selected_rating = data.get('rating')
         selected_vicinity = data.get('vicinity')
@@ -117,12 +119,15 @@ def home():
                             )
             db.session.add(new_cafe)
             db.session.commit()
+    # Get SQLDB to Check Duplicity
+    cafe_db = db.session.query(Cafe).all()
     return render_template('index.html',
                            form=form,
                            location=location,
                            key=key,
                            results=results,
-                           results_zipped=results_zipped)
+                           results_zipped=results_zipped,
+                           cafe_db=cafe_db)
 
 
 @app.route('/mycafes', methods=['POST', 'GET'])
@@ -136,9 +141,18 @@ def my_cafes():
         cafe.location = request.form.get('location')
         cafe.seats = request.form.get('seats')
         cafe.coffee_price = request.form.get('coffee_price')
+        db.session.commit()
     cafe_db = db.session.query(Cafe).all()
+    id_delete = request.args.get('cafe_id')
+    if id_delete:
+        to_delete = Cafe.query.get(id_delete)
+        db.session.delete(to_delete)
+        db.session.commit()
+        return redirect('/mycafes')
+
     return render_template('mycafes.html',
                            cafe_db=cafe_db)
+
 
 if __name__ == '__main__':
     app.run(port=7077, debug=True)

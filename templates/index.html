@@ -2,7 +2,7 @@
 
 <!-- title section -->
 {% block content %}
-<div class="container">
+<div class="container bg-light">
     <div class="container bg-light">
         <h1 class="display-1 text-success">MyPresso</h1>
         <div class="text-warning">
@@ -39,9 +39,10 @@
             </div>
         </form>
     </div>
-    <div class="container bg-light mt-3 mb-3">
+    <div class="container bg-light mb-3">
         <div id="map" style="height: 400px; width: 100%;"></div>
     </div>
+    <!--    table section    -->
     <table class="table">
         <thead>
         <tr>
@@ -51,7 +52,7 @@
         </thead>
         <tbody>
         {% if results is not none %}
-        {% for name, emoji, vicinity in results_zipped %}
+        {% for name, rating, emoji, vicinity in results_zipped %}
         <tr>
             <td>
                 <a href="#"><h5 class="font-weight-bold" data-location="{{ vicinity }}">{{ name }}</h5></a>
@@ -63,8 +64,18 @@
                 <h6 class="text-danger">{{ emoji }}</h6>
             </td>
             <td>
+                {% set flag = {'cafe_found': false} %}
+                {% for cafe in cafe_db %}
+                {% if name == cafe.name and vicinity == cafe.location %}
+                {% if flag.update({'cafe_found': true}) %}{% endif %}
+                {% endif %}
+                {% endfor %}
+                {% if flag.cafe_found %}
+                <i class="fa-regular fa-flag"></i>
+                {% else %}
                 <a href="#" class="add-cafe" data-name="{{ name }}"
-                   data-rating="{{ emoji }}" data-vicinity="{{ vicinity }}"><i class=" fa-solid fa-plus"></i></a>
+                   data-rating="{{ rating }}" data-vicinity="{{ vicinity }}"><i class=" fa-solid fa-plus"></i></a>
+                {% endif %}
             </td>
         </tr>
         {% endfor %}
@@ -73,7 +84,7 @@
     </table>
 </div>
 
-
+<!--footer section-->
 <script type="text/javascript">
     var mapKey = "{{ key }}";
 </script>
