@@ -2,22 +2,19 @@
 
 <!-- title section -->
 {% block content %}
-<div class="container bg-light">
-    <div class="container bg-light">
-        <h1 class="display-1 text-success">MyPresso</h1>
-        <div class="text-warning">
-            <h2>My Coffee Place List</h2>
-        </div>
+<div class="container bg-starbucks-white">
+    <div class="container bg-starbucks-white">
+        <h1 class="display-1 text-starbucks-green fw-bold">MyPresso</h1>
+        <h2 class="text-starbucks-brown fw-light">My Coffee Place List</h2>
     </div>
     <!-- form section  -->
-    <div class="container bg-light">
-        <form method="POST" novalidate>
+    <div class="container bg-starbucks-white">
+        <form id="locationForm" method="POST" novalidate>
             {{ form.hidden_tag() }}
             <div class="form-group">
                 {{ form.location.label }}
                 <small class="form-text text-muted indent-small">address of the place</small>
                 {{ form.location() }}
-
             </div>
             <div class="form-group">
                 {{ form.type.label }}
@@ -39,15 +36,13 @@
             </div>
         </form>
     </div>
-    <div class="container bg-light mb-3">
-        <div id="map" style="height: 400px; width: 100%;"></div>
-    </div>
     <!--    table section    -->
     <table class="table">
         <thead>
         <tr>
             <th scope="col">Place</th>
             <th scope="col">Rating</th>
+            <th scope="col">Add</th>
         </tr>
         </thead>
         <tbody>
@@ -55,7 +50,11 @@
         {% for name, rating, emoji, vicinity in results_zipped %}
         <tr>
             <td>
-                <a href="#"><h5 class="font-weight-bold" data-location="{{ vicinity }}">{{ name }}</h5></a>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <h5 class="font-weight-bold text-starbucks-black" data-location="{{ vicinity }}">
+                        {{ name }}
+                    </h5>
+                </a>
                 <a href="https://www.google.com/maps/search/?api=1&query={{ name }}{{ vicinity }}">
                     <small class="text-muted">{{ vicinity }}</small>
                 </a>
@@ -71,22 +70,62 @@
                 {% endif %}
                 {% endfor %}
                 {% if flag.cafe_found %}
-                <i class="fa-regular fa-flag"></i>
+                <i class="fa-regular fa-flag icon"></i>
                 {% else %}
                 <a href="#" class="add-cafe" data-name="{{ name }}"
-                   data-rating="{{ rating }}" data-vicinity="{{ vicinity }}"><i class=" fa-solid fa-plus"></i></a>
+                   data-rating="{{ rating }}" data-vicinity="{{ vicinity }}"><i class=" fa-solid fa-plus icon"></i></a>
                 {% endif %}
             </td>
         </tr>
         {% endfor %}
         {% endif %}
+
+        {% if results is none or results|length == 0 %}
+        <tr class="text-center">
+            <td>
+            <td>No Data Found
+            <td>
+            <td></td>
+        </tr>
+        {% endif %}
         </tbody>
     </table>
-</div>
 
-<!--footer section-->
+    <!-- Modal  Section-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cafe Location</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container bg-light mb-3">
+                        <div id="map" style="height: 400px; width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-starbucks-gold" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--Modal Map js Setting-->
 <script type="text/javascript">
-    var mapKey = "{{ key }}";
+    $('#exampleModal').on('shown.bs.modal', function () {
+       // Assuming you're using Google Maps, replace with your map initialization code as necessary
+       // This is just an example to trigger map resize
+       if(window.map && google.maps.event.trigger) {
+           google.maps.event.trigger(window.map, 'resize');
+           // Optionally, re-center the map after resizing
+           // window.map.setCenter({your map center coordinates});
+       }
+       // If the map is being initialized here for the first time, put that code here instead
+   });
+   var mapKey = "{{ key }}";
 </script>
 <script src="{{ url_for('static', filename='js/scripts.js') }}" async defer></script>
 {% include 'footer.html' %}

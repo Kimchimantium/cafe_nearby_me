@@ -54,12 +54,12 @@ class GetGeo():
         data = self.get_geo(address, save=True)
         print(f"data from get_geo: {data}")
         try:
-            geo_list = [
-                        data['results'][0]['geometry']['viewport']['southwest']['lat'],
-                        data['results'][0]['geometry']['viewport']['southwest']['lng']
-                        ]
+            latlng = [
+                data['results'][0]['geometry']['location']['lat'],
+                data['results'][0]['geometry']['location']['lng']
+            ]
             params = {
-                'location': f"{geo_list[0]},{geo_list[1]}",
+                'location': f"{latlng[0]},{latlng[1]}",
                 'radius': radius,
                 'type': type_,
                 'key': self.key,
@@ -80,3 +80,6 @@ class GetGeo():
             with open(filepath, 'w') as file:
                 json.dump(existing_data, file, indent=4, ensure_ascii=False)
         return response
+
+gg = GetGeo()
+print(gg.get_geo(address='ff'))

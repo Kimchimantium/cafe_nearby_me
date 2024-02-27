@@ -2,16 +2,16 @@
 
 {% block content %}
 <!--title section-->
-<div class="container bg-starbucks-gold">
+<div class="container bg-starbucks-gold mt-3">
     <div class="container bg-starbucks-gold">
-        <h1 class="display-1 text-starbucks-green">My Cafes</h1>
-        <h2 class="display-6 text-starbucks-white">Saved Favorites</h2>
+        <h1 class="display-1 text-starbucks-black mb-3">MY CAFE</h1>
+        <h5 class="text-starbucks-brown"><i class="fa-solid fa-star"> Favorites</i></h5>
     </div>
     <!--carousel section-->
     <div class="container bg-starbucks-green">
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
-                {% for cafe in cafe_db %}
+                {% for cafe in favorite_db %}
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ loop.index0 }}"
                         {% if
                         loop.index== 1 %}class="active" aria-current="true" {% endif %}
@@ -19,14 +19,14 @@
                 {% endfor %}
             </div>
             <div class="carousel-inner">
-                {% for cafe in cafe_db %}
+                {% for cafe in favorite_db %}
                 <div class="carousel-item {% if loop.index == 1 %}active{% endif %} text-light fw-light mt-3 mb-3">
                     <div class="d-flex justify-content-center">
-                        <div class="text-box">
+                        <div class="col-9">
                             <p><span class="text-starbucks-gold">NAME:</span> {{ cafe.name }}</p>
                             <p><span class="text-starbucks-gold">RATING:</span> {{ cafe.rating }}</p>
                             <p><span class="text-starbucks-gold">MAP:</span> <a href="{{ cafe.map_url }}"><i
-                                    class="fa-regular fa-map" style="color: #f8f9fa"></i></a></p>
+                                    class="fa-regular fa-map icon" style="color: #f8f9fa"></i></a></p>
                             <p><span class="text-starbucks-gold">LOCATION:</span> {{ cafe.location }}</p>
                             <p><span class="text-starbucks-gold">SEATS:</span> {{ cafe.seats }}</p>
                             <p><span class="text-starbucks-gold">PRICE:</span> {{ cafe.coffee_price }}</p>
@@ -51,11 +51,11 @@
     <!--  table section  -->
     <div class="d-flex">
         <button class="btn btn-starbucks-brown mt-3 mb-3 ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Show All
+                data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+            Hide List
         </button>
     </div>
-    <div class="collapse" id="collapseExample">
+    <div class="collapse show" id="collapseExample">
         <table class="table">
             <thead>
             <tr>
@@ -69,24 +69,31 @@
             </tr>
             </thead>
             <tbody>
-            {% for cafe in cafe_db %}
+            {% for cafe in paginated_cafes.items %}
             <tr>
                 <td>{{ cafe.name | default('N/A', true) }}</td>
                 <td>{{ cafe.rating | default('N/A', true) }}</td>
-                <td><a href="{{ cafe.map_url }}"><i class="fa-regular fa-map"></i></a></td>
+                <td><a href="{{ cafe.map_url }}"><i class="fa-regular fa-map icon"></i></a></td>
                 <td>{{ cafe.location }}</td>
                 <td>{{ cafe.seats | default('N/A', true) }}</td>
                 <td>{{ cafe.coffee_price | default('N/A', true) }}</td>
                 <td><a data-bs-toggle="collapse"
                        data-bs-target="#collapseEdit-{{ loop.index }}" aria-expanded="false"
                        aria-controls="collapseEdit-{{ loop.index }}"><i
-                        class="fa-regular fa-pen-to-square"></i></a>
-                    <a href="/mycafes?cafe_id={{ cafe.id }}"><i class="fa-solid fa-trash"></i></a>
+                        class="fa-regular fa-pen-to-square icon"></i></a>
+                    <a href="/mycafes?cafe_id={{ cafe.id }}&action=delete"><i class="fa-solid fa-trash icon"></i></a>
+                    <a href="/mycafes?cafe_id={{ cafe.id }}&action=favorite"><i class="fa-regular fa-star icon"></i></a>
                 </td>
             </tr>
             {% endfor %}
             </tbody>
         </table>
+        <div class="table-container d-flex justify-content-evenly">
+            <a href='' data-url="{{ url_for('my_cafes', page=paginated_cafes.prev_num) }}"
+               class="btn btn-starbucks-brown pagination-link">Previous</a>
+            <a href='' data-url="{{ url_for('my_cafes', page=paginated_cafes.next_num) }}"
+               class="btn btn-starbucks-brown pagination-link">Next</a>
+        </div>
     </div>
     <!--    table data editing section    -->
     {% for cafe in cafe_db %}

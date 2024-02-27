@@ -10,17 +10,18 @@ from geocode import GetGeo
 from pprint import pprint
 
 # TODO
-# sqldb rating from emoji to float. ✓
-# annotate sections html, py ✓
-# navbar brand from MENU to HOME ✓
-# db delete func in mycafes.html ✓
-# mycafes.html carousel text align type to justify ✓
 # change js google map default to place input's placeholder place
 # CSRF token
-# make sqlalchemy save the API results + user added info
 # change index.html plus btn to check btn when added
-
-
+# mycafes.html: show as 'nothing in list' if empty
+# index.html, mycafes.html: make show-more anchor
+# mypage.html: make favorites func(show in carousel) ✓
+# index.html: show as 'not found' with a png when nothing found in radius ✓
+# make sqlalchemy save the API results + user added info ✓
+# styles.css: add class text-starbucks-black, text-starbucks-black:hover✓
+# index.html: text-starbucks-black:hover to data-location td ✓
+# index.html: change map position as Bootstrap modal ✓
+# mycafes.html: fix collapse btn ✓
 
 # ===== App Setting =====
 app = Flask(__name__)
@@ -43,13 +44,15 @@ class Cafe(db.Model):
     location = db.Column(db.String(50), unique=True, nullable=False)
     seats = db.Column(db.String(250))
     coffee_price = db.Column(db.String(250))
+    favorite = db.Column(db.Boolean)
 
 # Form for index.html's Cafe Search
 class CafeForm(FlaskForm):
     location = StringField(label='Where to Search',
                            validators=[validators.DataRequired()],
                            render_kw={'placeholder': '경기도 성남시 분당구 정자일로 95',
-                                      'class': 'form-control'})
+                                      'class': 'form-control',
+                                      'id': 'locationInput'})
     type = SelectField(label='Place Type',
                        default='cafe',
                        choices=[('restaurant', 'Restaurant'), ('cafe', 'Café'), ('bar', 'Bar'),
@@ -64,9 +67,10 @@ class CafeForm(FlaskForm):
                           default=1000,
                           validators=[validators.DataRequired()],
                           render_kw={'placeholder': 'In m²',
-                                     'class': 'form-control'})
+                                     'class': 'form-control',
+                                     'id': 'radiusInput'})
     submit = SubmitField(label='Find',
-                         render_kw={'class': 'btn btn-warning form-control'})
+                         render_kw={'class': 'btn btn-starbucks-gold form-control'})
 
 
 def create_db():
@@ -75,16 +79,17 @@ def create_db():
         db.create_all()
 
 
+# create_db()
+
 # Flask App
 @app.route('/', methods=['GET', 'POST'])
 def home():
     key = os.getenv('GOOGLE_API_KEY')
-
     # Flask Form
     form = CafeForm()
-    location, result = None, []
-    # Get Form Data
+    location, result, json_received = None, [], False
     results, result_names, result_ratings, result_emojis, result_vicinities, results_zipped = [], [], [], [], [], []
+    # Get Form Data
     if form.validate_on_submit():
         location = form.location.data
         type_ = form.type.data
@@ -95,18 +100,21 @@ def home():
         gg = GetGeo()
         result = gg.by_geo(type_=type_, keyword=keyword, address=location, radius=radius, save=True)
         results = result['results']
+
         for result in results:
             result_names.append(result['name'])
             result_vicinities.append(result['vicinity'])
             result_ratings.append(result['rating'])
             rating_emojis = '😶' if result['rating'] == 0 else '⭐️' * int(result['rating'])
             result_emojis.append(rating_emojis)
-        results_zipped = list(zip(result_names, result_ratings, result_emojis, result_vicinities))
 
+        results_zipped = list(zip(result_names, result_ratings, result_emojis, result_vicinities))
+    elif request.method == 'POST' and not form.validate_on_submit():
+        pass
     # Get url args data
     if request.method == 'POST' and request.is_json:
+        json_received = True
         data = request.get_json()
-        print(data)
         selected_name = data.get('name')
         selected_rating = data.get('rating')
         selected_vicinity = data.get('vicinity')
@@ -115,7 +123,8 @@ def home():
                             rating=selected_rating,
                             map_url=f"https://www.google.com/maps/search/?api=1&query="
                                     f"{selected_name}{selected_vicinity}",
-                            location=selected_vicinity
+                            location=selected_vicinity,
+                            favorite=False
                             )
             db.session.add(new_cafe)
             db.session.commit()
@@ -127,7 +136,8 @@ def home():
                            key=key,
                            results=results,
                            results_zipped=results_zipped,
-                           cafe_db=cafe_db)
+                           cafe_db=cafe_db,
+                           json_received=json_received,)
 
 
 @app.route('/mycafes', methods=['POST', 'GET'])
@@ -142,16 +152,30 @@ def my_cafes():
         cafe.seats = request.form.get('seats')
         cafe.coffee_price = request.form.get('coffee_price')
         db.session.commit()
+
     cafe_db = db.session.query(Cafe).all()
-    id_delete = request.args.get('cafe_id')
-    if id_delete:
-        to_delete = Cafe.query.get(id_delete)
-        db.session.delete(to_delete)
+    favorite_db = Cafe.query.filter_by(favorite=1).all()
+
+    if request.args.get('action') == 'delete':
+        id_delete = request.args.get('cafe_id')
+        cafe = Cafe.query.get(id_delete)
+        db.session.delete(cafe)
+        db.session.commit()
+        return redirect('/mycafes')
+    elif request.args.get('action') == 'favorite':
+        id_favorite = request.args.get('cafe_id')
+        cafe = Cafe.query.get(id_favorite)
+        cafe.favorite = True
         db.session.commit()
         return redirect('/mycafes')
 
+    page = request.args.get('page', 1, type=int)
+    per_page = 10
+    paginated_cafes = Cafe.query.paginate(page=page, per_page=per_page, error_out=False)
     return render_template('mycafes.html',
-                           cafe_db=cafe_db)
+                           cafe_db=cafe_db,
+                           favorite_db=favorite_db,
+                           paginated_cafes=paginated_cafes)
 
 
 if __name__ == '__main__':
