@@ -179,5 +179,12 @@ def my_cafes():
                            paginated_cafes=paginated_cafes)
 
 
+@app.route('/info')
+def info():
+    pass
+    return render_template('info.html')
+
+
+
 if __name__ == '__main__':
     app.run(port=7077, debug=True)

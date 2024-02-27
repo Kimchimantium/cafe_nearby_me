@@ -5,7 +5,7 @@
 <div class="bg-starbucks-white">
     <div class="container bg-starbucks-white">
         <!--carousel section-->
-        <div class="container bg-starbucks-green">
+        <div class="container bg-starbucks-green carousel-container">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     {% for cafe in favorite_db %}
@@ -91,7 +91,15 @@
                             class="fa-regular fa-pen-to-square icon"></i></a>
                         <a href="/mycafes?cafe_id={{ cafe.id }}&action=delete"><i
                                 class="fa-solid fa-trash icon"></i></a>
-                        <a href="/mycafes?cafe_id={{ cafe.id }}&action=favorite"><i class="fa-regular fa-star icon"></i></a>
+                        {% if cafe.favorite == 0 %}
+                        <a href="/mycafes?cafe_id={{ cafe.id }}&action=favorite" class="add-favorite">
+                            <i class="fa-regular fa-star icon"></i>
+                        </a>
+                        {% else %}
+                        <a class="add-favorite">
+                            <i class="fa-solid fa-star icon"></i>
+                        </a>
+                        {% endif %}
                     </td>
                 </tr>
                 {% endfor %}
@@ -118,19 +126,19 @@
                 <input type="hidden" name="cafe_id" value="{{ cafe.id }}">
                 <div class="col-12">
                     <input type="text" name="name" class="form-control" placeholder="Name: {{ cafe.name }}"
-                           aria-label="Name">
+                           aria-label="Name" value="{{ cafe.name }}">
                 </div>
                 <div class="col-12">
                     <input type="text" name="rating" class="form-control" placeholder="Rating: {{ cafe.rating }}"
-                           aria-label="Rating">
+                           aria-label="Rating" value="{{ cafe.rating }}">
                 </div>
                 <div class="col-12">
                     <input type="text" name="map_url" class="form-control" placeholder="Map: {{ cafe.map_url }}"
-                           aria-label="Map">
+                           aria-label="Map" value="{{ cafe.map_url }}">
                 </div>
                 <div class="col-12">
                     <input type="text" name="location" class="form-control" placeholder="Location: {{ cafe.location }}"
-                           aria-label="Location">
+                           aria-label="Location" value="{{ cafe.location }}">
                 </div>
                 <div class="col-6">
                     <input type="text" name="seats" class="form-control" placeholder="Seats: {{ cafe.seats }}"

@@ -153,6 +153,17 @@ $(document).ready(function(){
 
         // Additional logic for sending data to the server or updating the UI
     });
+    $('.add-favorite').click(function(e){
+        e.preventDefault(); // Prevent the default action
+
+        // Change the class of the <i> child element to switch icons
+        $(this).find('i').removeClass('fa-regular').addClass('fa-solid');
+
+        // Optionally, you can also change the anchor class for styling or to prevent re-clicks
+        $(this).removeClass('add-favorite').addClass('favorite');
+
+        // Additional logic for sending data to the server or updating the UI
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function () {

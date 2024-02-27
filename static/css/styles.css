@@ -115,3 +115,7 @@ a, a:visited {
 .icon {
     color: #333;
 }
+.carousel-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
