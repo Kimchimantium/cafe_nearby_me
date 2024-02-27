@@ -154,3 +154,18 @@ $(document).ready(function(){
         // Additional logic for sending data to the server or updating the UI
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var collapseElement = document.getElementById('collapseExample');
+    var toggleButton = document.getElementById('toggleListButton');
+
+    // Listen for the collapse to finish opening
+    collapseElement.addEventListener('show.bs.collapse', function () {
+        toggleButton.textContent = 'Hide List'; // Change button text
+    });
+
+    // Listen for the collapse to finish closing
+    collapseElement.addEventListener('hide.bs.collapse', function () {
+        toggleButton.textContent = 'Show List'; // Change button text
+    });
+});

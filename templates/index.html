@@ -4,7 +4,6 @@
 {% block content %}
 <div class="container bg-starbucks-white">
     <div class="container bg-starbucks-white">
-        <h1 class="display-1 text-starbucks-green fw-bold">MyPresso</h1>
         <h2 class="text-starbucks-brown fw-light">My Coffee Place List</h2>
     </div>
     <!-- form section  -->
@@ -90,43 +89,6 @@
         {% endif %}
         </tbody>
     </table>
-
-    <!-- Modal  Section-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cafe Location</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container bg-light mb-3">
-                        <div id="map" style="height: 400px; width: 100%;"></div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-starbucks-gold" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 </div>
-<!--Modal Map js Setting-->
-<script type="text/javascript">
-    $('#exampleModal').on('shown.bs.modal', function () {
-       // Assuming you're using Google Maps, replace with your map initialization code as necessary
-       // This is just an example to trigger map resize
-       if(window.map && google.maps.event.trigger) {
-           google.maps.event.trigger(window.map, 'resize');
-           // Optionally, re-center the map after resizing
-           // window.map.setCenter({your map center coordinates});
-       }
-       // If the map is being initialized here for the first time, put that code here instead
-   });
-   var mapKey = "{{ key }}";
-</script>
-<script src="{{ url_for('static', filename='js/scripts.js') }}" async defer></script>
 {% include 'footer.html' %}
 {% endblock %}

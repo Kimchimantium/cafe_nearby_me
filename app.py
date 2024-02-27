@@ -10,18 +10,17 @@ from geocode import GetGeo
 from pprint import pprint
 
 # TODO
-# change js google map default to place input's placeholder place
 # CSRF token
-# change index.html plus btn to check btn when added
-# mycafes.html: show as 'nothing in list' if empty
-# index.html, mycafes.html: make show-more anchor
+# change index.html plus btn to flag btn when added ✓
+# mycafes.html: show as 'nothing in list' if empty ✓
 # mypage.html: make favorites func(show in carousel) ✓
 # index.html: show as 'not found' with a png when nothing found in radius ✓
 # make sqlalchemy save the API results + user added info ✓
-# styles.css: add class text-starbucks-black, text-starbucks-black:hover✓
+# styles.css: add class text-starbucks-black, text-starbucks-black:hover ✓
 # index.html: text-starbucks-black:hover to data-location td ✓
 # index.html: change map position as Bootstrap modal ✓
 # mycafes.html: fix collapse btn ✓
+
 
 # ===== App Setting =====
 app = Flask(__name__)
@@ -77,7 +76,6 @@ def create_db():
     """ Make new db """
     with app.app_context():
         db.create_all()
-
 
 # create_db()
 
@@ -142,6 +140,7 @@ def home():
 
 @app.route('/mycafes', methods=['POST', 'GET'])
 def my_cafes():
+    key = os.getenv('GOOGLE_API_KEY')
     if request.method == "POST":
         new_id = request.form.get('cafe_id')
         cafe = Cafe.query.get(new_id)
@@ -172,6 +171,8 @@ def my_cafes():
     page = request.args.get('page', 1, type=int)
     per_page = 10
     paginated_cafes = Cafe.query.paginate(page=page, per_page=per_page, error_out=False)
+    for cafe in paginated_cafes:
+        print(cafe.location)
     return render_template('mycafes.html',
                            cafe_db=cafe_db,
                            favorite_db=favorite_db,

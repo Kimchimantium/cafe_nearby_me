@@ -109,6 +109,9 @@ a, a:visited {
     background-color: #503C3C;
     border-color: #402C2C;
 }
+.border-starbucks-green {
+    border-color: #016843;
+}
 .icon {
     color: #333;
 }

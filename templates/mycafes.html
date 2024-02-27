@@ -2,135 +2,150 @@
 
 {% block content %}
 <!--title section-->
-<div class="container bg-starbucks-gold mt-3">
-    <div class="container bg-starbucks-gold">
-        <h1 class="display-1 text-starbucks-black mb-3">MY CAFE</h1>
-        <h5 class="text-starbucks-brown"><i class="fa-solid fa-star"> Favorites</i></h5>
-    </div>
-    <!--carousel section-->
-    <div class="container bg-starbucks-green">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                {% for cafe in favorite_db %}
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ loop.index0 }}"
-                        {% if
-                        loop.index== 1 %}class="active" aria-current="true" {% endif %}
-                        aria-label="Cafe {{loop.index }}"></button>
-                {% endfor %}
-            </div>
-            <div class="carousel-inner">
-                {% for cafe in favorite_db %}
-                <div class="carousel-item {% if loop.index == 1 %}active{% endif %} text-light fw-light mt-3 mb-3">
-                    <div class="d-flex justify-content-center">
-                        <div class="col-9">
-                            <p><span class="text-starbucks-gold">NAME:</span> {{ cafe.name }}</p>
-                            <p><span class="text-starbucks-gold">RATING:</span> {{ cafe.rating }}</p>
-                            <p><span class="text-starbucks-gold">MAP:</span> <a href="{{ cafe.map_url }}"><i
-                                    class="fa-regular fa-map icon" style="color: #f8f9fa"></i></a></p>
-                            <p><span class="text-starbucks-gold">LOCATION:</span> {{ cafe.location }}</p>
-                            <p><span class="text-starbucks-gold">SEATS:</span> {{ cafe.seats }}</p>
-                            <p><span class="text-starbucks-gold">PRICE:</span> {{ cafe.coffee_price }}</p>
-                        </div>
-                    </div>
-                    <br>
+<div class="bg-starbucks-white">
+    <div class="container bg-starbucks-white">
+        <!--carousel section-->
+        <div class="container bg-starbucks-green">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    {% for cafe in favorite_db %}
+                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="{{ loop.index0 }}"
+                            {% if loop.index==1 %}class="active" aria-current="true" {% endif %}
+                            aria-label="Cafe {{loop.index }}"></button>
+                    {% endfor %}
                 </div>
+                <div class="carousel-inner">
+                    {% for cafe in favorite_db %}
+                    <div class="carousel-item {% if loop.index == 1 %}active{% endif %} text-light fw-light mt-3 mb-3">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-9">
+                                <p><span class="text-starbucks-gold">NAME:</span> {{ cafe.name }}</p>
+                                <p><span class="text-starbucks-gold">RATING:</span> {{ cafe.rating }}</p>
+                                <p><span class="text-starbucks-gold">MAP:</span> <a href="{{ cafe.map_url }}"><i
+                                        class="fa-regular fa-map icon" style="color: #f8f9fa"></i></a></p>
+                                <p><span class="text-starbucks-gold">LOCATION:</span> {{ cafe.location }}</p>
+                                <p><span class="text-starbucks-gold">SEATS:</span> {{ cafe.seats }}</p>
+                                <p><span class="text-starbucks-gold">PRICE:</span> {{ cafe.coffee_price }}</p>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <h5 class="text-starbucks-brown">Favorites<i class="fa-solid fa-star"></i></h5>
+        <!--  table section  -->
+        <div class="d-flex">
+            <button class="btn btn-starbucks-brown mt-3 mb-3 ms-auto" type="button" id="toggleListButton"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                Hide List
+            </button>
+        </div>
+        <div class="collapse show" id="collapseExample">
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Rating</th>
+                    <th scope="col">Map</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Seats</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Edit</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% if cafe_db is none or cafe_db|length == 0 %}
+                <tr>
+                    <td><td><td><td>No Added Cafes<td><td><td></td>
+                </tr>
+                {% else %}
+                {% for cafe in paginated_cafes.items %}
+                <tr>
+                    <td>{{ cafe.name | default('N/A', true) }}</td>
+                    <td>{{ cafe.rating | default('N/A', true) }}</td>
+                    <td>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="font-weight-bold fa-regular fa-map icon" data-location="{{ cafe.location }}"></i>
+                        </a>
+                    </td>
+                    <td>{{ cafe.location }}</td>
+                    <td>{{ cafe.seats | default('N/A', true) }}</td>
+                    <td>{{ cafe.coffee_price | default('N/A', true) }}</td>
+                    <td><a data-bs-toggle="collapse"
+                           data-bs-target="#collapseEdit-{{ loop.index }}" aria-expanded="false"
+                           aria-controls="collapseEdit-{{ loop.index }}"><i
+                            class="fa-regular fa-pen-to-square icon"></i></a>
+                        <a href="/mycafes?cafe_id={{ cafe.id }}&action=delete"><i
+                                class="fa-solid fa-trash icon"></i></a>
+                        <a href="/mycafes?cafe_id={{ cafe.id }}&action=favorite"><i class="fa-regular fa-star icon"></i></a>
+                    </td>
+                </tr>
                 {% endfor %}
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!--  table section  -->
-    <div class="d-flex">
-        <button class="btn btn-starbucks-brown mt-3 mb-3 ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
-            Hide List
-        </button>
-    </div>
-    <div class="collapse show" id="collapseExample">
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Rating</th>
-                <th scope="col">Map</th>
-                <th scope="col">Location</th>
-                <th scope="col">Seats</th>
-                <th scope="col">Price</th>
-                <th scope="col">Edit</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for cafe in paginated_cafes.items %}
-            <tr>
-                <td>{{ cafe.name | default('N/A', true) }}</td>
-                <td>{{ cafe.rating | default('N/A', true) }}</td>
-                <td><a href="{{ cafe.map_url }}"><i class="fa-regular fa-map icon"></i></a></td>
-                <td>{{ cafe.location }}</td>
-                <td>{{ cafe.seats | default('N/A', true) }}</td>
-                <td>{{ cafe.coffee_price | default('N/A', true) }}</td>
-                <td><a data-bs-toggle="collapse"
-                       data-bs-target="#collapseEdit-{{ loop.index }}" aria-expanded="false"
-                       aria-controls="collapseEdit-{{ loop.index }}"><i
-                        class="fa-regular fa-pen-to-square icon"></i></a>
-                    <a href="/mycafes?cafe_id={{ cafe.id }}&action=delete"><i class="fa-solid fa-trash icon"></i></a>
-                    <a href="/mycafes?cafe_id={{ cafe.id }}&action=favorite"><i class="fa-regular fa-star icon"></i></a>
-                </td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-        <div class="table-container d-flex justify-content-evenly">
-            <a href='' data-url="{{ url_for('my_cafes', page=paginated_cafes.prev_num) }}"
-               class="btn btn-starbucks-brown pagination-link">Previous</a>
-            <a href='' data-url="{{ url_for('my_cafes', page=paginated_cafes.next_num) }}"
-               class="btn btn-starbucks-brown pagination-link">Next</a>
-        </div>
-    </div>
-    <!--    table data editing section    -->
-    {% for cafe in cafe_db %}
-    <div class="collapse" id="collapseEdit-{{ loop.index }}">
-        <form action="{{ url_for('my_cafes') }}" method="POST" onsubmit="submitForm(event, '{{ cafe.id }}';"
-              class="row">
-            <input type="hidden" name="cafe_id" value="{{ cafe.id }}">
-            <div class="col-12">
-                <input type="text" name="name" class="form-control" placeholder="Name: {{ cafe.name }}"
-                       aria-label="Name">
-            </div>
-            <div class="col-12">
-                <input type="text" name="rating" class="form-control" placeholder="Rating: {{ cafe.rating }}"
-                       aria-label="Rating">
-            </div>
-            <div class="col-12">
-                <input type="text" name="map_url" class="form-control" placeholder="Map: {{ cafe.map_url }}"
-                       aria-label="Map">
-            </div>
-            <div class="col-12">
-                <input type="text" name="location" class="form-control" placeholder="Location: {{ cafe.location }}"
-                       aria-label="Location">
-            </div>
-            <div class="col-6">
-                <input type="text" name="seats" class="form-control" placeholder="Seats: {{ cafe.seats }}"
-                       aria-label="Seats">
-            </div>
-            <div class="col-6">
-                <input type="text" name="coffee_price" class="form-control" placeholder="Price: {{ cafe.coffee_price }}"
-                       aria-label="Price">
-            </div>
-            <button type="submit" class="btn btn-primary">Save Change</button>
-        </form>
-    </div>
-    {% endfor %}
-</div>
+                {% endif %}
+                </tbody>
+            </table>
+            <div class="table-container d-flex justify-content-evenly">
 
-<script src="{{ url_for('static', filename='js/scripts.js') }}" async defer></script>
+                <a href="{{ url_for('my_cafes', page=paginated_cafes.prev_num) }}"
+                   class="btn btn-starbucks-brown pagination-link {{ 'disabled' if not paginated_cafes.has_prev else '' }}"
+                   {% if not paginated_cafes.has_prev %}tabindex="-1" aria-disabled="true" {% endif %}>Previous</a>
+                <a href="{{ url_for('my_cafes', page=paginated_cafes.next_num) }}"
+                   class="btn btn-starbucks-brown pagination-link {{ 'disabled' if not paginated_cafes.has_next else '' }}"
+                   {% if not paginated_cafes.has_next %}tabindex="-1"
+                   aria-disabled="true" {% endif %}>Next</a>
+
+            </div>
+        </div>
+        <!--    table data editing section    -->
+        {% for cafe in cafe_db %}
+        <div class="collapse" id="collapseEdit-{{ loop.index }}">
+            <form action="{{ url_for('my_cafes') }}" method="POST" onsubmit="submitForm(event, '{{ cafe.id }}';"
+                  class="row">
+                <input type="hidden" name="cafe_id" value="{{ cafe.id }}">
+                <div class="col-12">
+                    <input type="text" name="name" class="form-control" placeholder="Name: {{ cafe.name }}"
+                           aria-label="Name">
+                </div>
+                <div class="col-12">
+                    <input type="text" name="rating" class="form-control" placeholder="Rating: {{ cafe.rating }}"
+                           aria-label="Rating">
+                </div>
+                <div class="col-12">
+                    <input type="text" name="map_url" class="form-control" placeholder="Map: {{ cafe.map_url }}"
+                           aria-label="Map">
+                </div>
+                <div class="col-12">
+                    <input type="text" name="location" class="form-control" placeholder="Location: {{ cafe.location }}"
+                           aria-label="Location">
+                </div>
+                <div class="col-6">
+                    <input type="text" name="seats" class="form-control" placeholder="Seats: {{ cafe.seats }}"
+                           aria-label="Seats">
+                </div>
+                <div class="col-6">
+                    <input type="text" name="coffee_price" class="form-control"
+                           placeholder="Price: {{ cafe.coffee_price }}"
+                           aria-label="Price">
+                </div>
+                <button type="submit" class="btn btn-primary">Save Change</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% include 'footer.html' %}
 {% endblock %}
