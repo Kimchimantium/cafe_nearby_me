@@ -18,25 +18,32 @@
         </div>
     </div>
 </div>
+
 <!--Modal Map js Setting-->
 <script type="text/javascript">
+    var mapKey = "{{ key }}";
+
     $('#exampleModal').on('shown.bs.modal', function () {
-       // Assuming you're using Google Maps, replace with your map initialization code as necessary
-       // This is just an example to trigger map resize
-       if(window.map && google.maps.event.trigger) {
-           google.maps.event.trigger(window.map, 'resize');
-           // Optionally, re-center the map after resizing
-           // window.map.setCenter({your map center coordinates});
-       }
-       // If the map is being initialized here for the first time, put that code here instead
-   });
-   var mapKey = "{{ key }}";
+        if(window.initMap && !window.mapInitialized) {
+            window.initMap(); // Initialize the map if not already initialized
+            window.mapInitialized = true; // Set a flag to avoid reinitialization
+        }
+
+        if (window.map && google.maps.event.trigger) {
+            google.maps.event.trigger(window.map, 'resize');
+            // Optionally, re-center the map
+            window.map.setCenter(new google.maps.LatLng(37.3588478, 127.1051678));
+        }
+    });
+
+    // Load the Google Maps script
+    loadGoogleMapsScript();
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-<script src="{{ url_for('static', filename='js/scripts.js') }}" async defer></script>
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 {% endblock footer %}
 </body>
 </html>

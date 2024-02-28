@@ -11,9 +11,8 @@ from pprint import pprint
 
 # TODO
 # CSRF token
-# mycafes.html: favorite add & remove function fix ✓
-# app.py: favorite add & remove to sqldb logic ✓
-
+# scripts.js async defer removed ✓
+# fix map modal bug - pass API with flask to html & web ✓
 
 
 # ===== App Setting =====
@@ -171,6 +170,7 @@ def my_cafes():
     for cafe in paginated_cafes:
         print(cafe.location)
     return render_template('mycafes.html',
+                           key=key,
                            cafe_db=cafe_db,
                            favorite_db=favorite_db,
                            paginated_cafes=paginated_cafes)
@@ -184,4 +184,4 @@ def info():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

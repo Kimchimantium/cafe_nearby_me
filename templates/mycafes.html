@@ -70,7 +70,13 @@
                 <tbody>
                 {% if cafe_db is none or cafe_db|length == 0 %}
                 <tr>
-                    <td><td><td><td>No Added Cafes<td><td><td></td>
+                    <td>
+                    <td>
+                    <td>
+                    <td>No Added Cafes
+                    <td>
+                    <td>
+                    <td></td>
                 </tr>
                 {% else %}
                 {% for cafe in paginated_cafes.items %}
@@ -79,7 +85,8 @@
                     <td>{{ cafe.rating | default('N/A', true) }}</td>
                     <td>
                         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="font-weight-bold fa-regular fa-map icon" data-location="{{ cafe.location }}"></i>
+                            <i class="font-weight-bold fa-regular fa-map icon"
+                                data-location="{{ cafe.location }}"></i>
                         </a>
                     </td>
                     <td>{{ cafe.location }}</td>
@@ -155,5 +162,6 @@
         {% endfor %}
     </div>
 </div>
+
 {% include 'footer.html' %}
 {% endblock %}
