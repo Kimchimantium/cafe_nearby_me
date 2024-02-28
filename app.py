@@ -11,15 +11,9 @@ from pprint import pprint
 
 # TODO
 # CSRF token
-# change index.html plus btn to flag btn when added ✓
-# mycafes.html: show as 'nothing in list' if empty ✓
-# mypage.html: make favorites func(show in carousel) ✓
-# index.html: show as 'not found' with a png when nothing found in radius ✓
-# make sqlalchemy save the API results + user added info ✓
-# styles.css: add class text-starbucks-black, text-starbucks-black:hover ✓
-# index.html: text-starbucks-black:hover to data-location td ✓
-# index.html: change map position as Bootstrap modal ✓
-# mycafes.html: fix collapse btn ✓
+# mycafes.html: favorite add & remove function fix ✓
+# app.py: favorite add & remove to sqldb logic ✓
+
 
 
 # ===== App Setting =====
@@ -190,4 +184,4 @@ def info():
 
 
 if __name__ == '__main__':
-    app.run(port=7077, debug=True)
+    app.run(debug=False)
