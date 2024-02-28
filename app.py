@@ -11,8 +11,8 @@ from pprint import pprint
 
 # TODO
 # CSRF token
-# scripts.js async defer removed ✓
-# fix map modal bug - pass API with flask to html & web ✓
+# revise CSS
+# mycafes.html: table collapse button js configuration
 
 
 # ===== App Setting =====

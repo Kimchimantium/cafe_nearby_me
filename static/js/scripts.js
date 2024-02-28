@@ -154,3 +154,18 @@ $(document).ready(function(){
         // Additional logic for sending data to the server or updating the UI
     });
 });
+//table collapse button
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the button and collapse element
+    var toggleButton = document.getElementById("toggleListButton");
+    var collapseElement = document.getElementById("collapseExample");
+
+    // Listen for the collapse to be shown/hidden and toggle button text
+    collapseElement.addEventListener('show.bs.collapse', function () {
+        toggleButton.textContent = 'Hide List';
+    });
+
+    collapseElement.addEventListener('hide.bs.collapse', function () {
+        toggleButton.textContent = 'Show List';
+    });
+});

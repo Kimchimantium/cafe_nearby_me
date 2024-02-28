@@ -1,121 +1,153 @@
+/* Starbucks Theme Colors */
+:root {
+    --starbucks-green: #00704A;
+    --starbucks-dark-green: #005241;
+    --starbucks-brown: #362415;
+    --starbucks-gold: #CBA258;
+    --starbucks-white: #F7F6F4;
+    --starbucks-black: #1E3932;
+}
+
 body {
-    background-color: #FFFCFC;
+    background-color: var(--starbucks-white);
+    color: var(--starbucks-black);
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+ text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Headers */
+h2, h5 {
+    color: var(--starbucks-brown);
+}
+
+/* Forms & Inputs */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--starbucks-dark-green);
+}
+
+.form-control {
+    border: 1px solid var(--starbucks-green);
+    color: var(--starbucks-black);
+}
+
+.form-control:focus {
+    border-color: var(--starbucks-gold);
+    box-shadow: 0 0 0 0.2rem rgba(202, 162, 88, 0.25);
+}
+
+.form-text {
+    color: var(--starbucks-dark-green);
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--starbucks-brown);
+    color: var(--starbucks-white);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--starbucks-gold);
+}
+
+/* Tables */
+.table {
+    margin-top: 20px;
+}
+
+.table th {
+    color: var(--starbucks-white);
+    background-color: var(--starbucks-green);
+}
+
+.table td {
+    color: var(--starbucks-black);
+}
+
+/* Carousel */
+.carousel-container {
+    background-color: var(--starbucks-green);
+}
+
+.carousel-item {
+    color: var(--starbucks-white);
+}
+
+/* Icons and Links */
+.icon, a {
+    color: var(--starbucks-gold);
+}
+
+.icon:hover {
+    color: var(--starbucks-brown);
+}
+
+/* Pagination */
+.pagination-link {
+    color: var(--starbucks-white);
+    background-color: var(--starbucks-brown);
+    margin: 0 5px;
+}
+
+.pagination-link:hover {
+    background-color: var(--starbucks-gold);
+}
+
+.pagination-link.disabled {
+    opacity: 0.5;
+}
+
+/* Modals */
+.modal-content {
+    background-color: var(--starbucks-white);
+}
+
+.modal-header, .modal-footer {
+    border-bottom: 1px solid var(--starbucks-green);
+    border-top: 1px solid var(--starbucks-green);
+}
+
+.modal-title {
+    color: var(--starbucks-black);
+}
+
+/* Custom Utilities */
+.text-starbucks-brown {
+    color: var(--starbucks-brown) !important;
+}
+
+.text-starbucks-green {
+    color: var(--starbucks-green) !important;
+}
+
+.text-starbucks-gold {
+    color: var(--starbucks-gold) !important;
+}
+
+.text-starbucks-black {
+    color: var(--starbucks-black) !important;
+}
+
+.bg-starbucks-green {
+    background-color: var(--starbucks-green) !important;
+}
+
+.bg-starbucks-white {
+    background-color: var(--starbucks-white) !important;
 }
 
 .indent-small {
-    margin-left: 10px;
-}
-
-a, a:visited {
-    text-decoration: none;
-    }
-#submit:hover {
-    color: #FFFCFC; /* bootstrap primary color */
-}
-
-.icon-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Ensure it takes full height of the cell */
-}
-.bg-starbucks-green {
-    background-color: #016843;
-}
-.bg-starbucks-white {
-    background-color: #FFFCFC;
-}
-.bg-starbucks-gold {
-    background-color: #EAC784;
-}
-.bg-starbucks-brown {
-    background-color: #362415;
-}
-.bg-starbucks-graybrown {
-    background-color: #604C4C;
-}
-.text-starbucks-green {
-    color: #016843;
-}
-.text-starbucks-white {
-    color: #FFFCFC;
-}
-.text-starbucks-gold {
-    color: #EAC784;
-}
-.text-starbucks-brown {
-    color: #362415;
-}
-.text-starbucks-graybrown {
-    color: #604C4C;
-}
-.text-starbucks-black {
-    color: #333;
-}
-.text-starbucks-black:hover {
-    color: rgba(51, 51, 51, 0.5);
-}
-
-.btn-starbucks-green {
-    background-color: #016843;
-    color: #FFFCFC;
-    border: 2px solid #015738;
-}
-.btn-starbucks-green:hover {
-    background-color: #015738;
-    border-color: #01482e;
-}
-
-.btn-starbucks-white {
-    background-color: #FFFCFC;
-    color: #362415;
-    border: 2px solid #E6E6E6;
-}
-
-.btn-starbucks-white:hover {
-    background-color: #E6E6E6;
-    border-color: #CCCCCC;
-}
-
-.btn-starbucks-gold {
-    background-color: #EAC784;
-    color: #362415;
-    border: 2px solid #D1B274;
-}
-
-.btn-starbucks-gold:hover {
-    background-color: #D1B274;
-    border-color: #C7A564;
-}
-
-.btn-starbucks-brown {
-    background-color: #362415;
-    color: #FFFCFC;
-    border: 2px solid #2E1E10;
-}
-
-.btn-starbucks-brown:hover {
-    background-color: #2E1E10;
-    border-color: #261a0d;
-}
-
-.btn-starbucks-graybrown {
-    background-color: #604C4C;
-    color: #FFFCFC;
-    border: 2px solid #503C3C;
-}
-
-.btn-starbucks-graybrown:hover {
-    background-color: #503C3C;
-    border-color: #402C2C;
-}
-.border-starbucks-green {
-    border-color: #016843;
-}
-.icon {
-    color: #333;
-}
-.carousel-container {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-left: 5px;
 }
