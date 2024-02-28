@@ -164,7 +164,10 @@ def my_cafes():
     elif request.args.get('action') == 'favorite':
         id_favorite = request.args.get('cafe_id')
         cafe = Cafe.query.get(id_favorite)
-        cafe.favorite = True
+        if cafe.favorite:
+            cafe.favorite = False
+        else:
+            cafe.favorite = True
         db.session.commit()
         return redirect('/mycafes')
 

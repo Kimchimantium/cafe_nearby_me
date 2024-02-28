@@ -154,15 +154,37 @@ $(document).ready(function(){
         // Additional logic for sending data to the server or updating the UI
     });
     $('.add-favorite').click(function(e){
-        e.preventDefault(); // Prevent the default action
+    e.preventDefault(); // Prevent the default action
 
-        // Change the class of the <i> child element to switch icons
-        $(this).find('i').removeClass('fa-regular').addClass('fa-solid');
+    var $this = $(this); // Cache this for use in AJAX callback
 
-        // Optionally, you can also change the anchor class for styling or to prevent re-clicks
-        $(this).removeClass('add-favorite').addClass('favorite');
+    // Extract cafe_id and action from the anchor's href attribute
+    var url = $this.attr('href');
 
-        // Additional logic for sending data to the server or updating the UI
+    // Perform an AJAX request to the server
+    $.ajax({
+        url: url,
+        type: 'GET', // Or 'POST', depending on how your server expects to receive the request
+        success: function(response) {
+            // Assuming the server sends back a success response
+            // Now update the UI to reflect the change
+
+            // Change the class of the <i> child element to switch icons
+            $this.find('i').removeClass('fa-regular').addClass('fa-solid');
+
+            // Optionally, you can also change the anchor class for styling or to prevent re-clicks
+            $this.removeClass('add-favorite').addClass('favorite');
+
+            // You can also update other parts of your UI based on the response
+            // For example, showing a message to the user
+            // $('#success-message').text('Cafe added to favorites!').show();
+        },
+        error: function(xhr, status, error) {
+            // Handle any errors here
+            console.error("An error occurred: " + error);
+            // Optionally, display an error message to the user
+            // $('#error-message').text('Failed to add cafe to favorites. Please try again.').show();
+        }
     });
 });
 

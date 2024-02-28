@@ -96,7 +96,7 @@
                             <i class="fa-regular fa-star icon"></i>
                         </a>
                         {% else %}
-                        <a class="add-favorite">
+                        <a href="/mycafes?cafe_id={{ cafe.id }}&action=favorite" class="add-favorite">
                             <i class="fa-solid fa-star icon"></i>
                         </a>
                         {% endif %}
