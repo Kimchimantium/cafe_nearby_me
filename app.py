@@ -11,8 +11,9 @@ from pprint import pprint
 
 # TODO
 # CSRF token
-# revise CSS
-# mycafes.html: table collapse button js configuration
+# revise CSS ✓
+# mycafes.html: table collapse button js configuration ✓
+# add .gitignore ✓
 
 
 # ===== App Setting =====
