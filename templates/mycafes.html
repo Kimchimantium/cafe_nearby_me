@@ -22,11 +22,22 @@
                             <div class="col-9">
                                 <p><span class="text-starbucks-gold">NAME:</span> {{ cafe.name }}</p>
                                 <p><span class="text-starbucks-gold">RATING:</span> {{ cafe.rating }}</p>
-                                <p><span class="text-starbucks-gold">MAP:</span> <a href="{{ cafe.map_url }}"><i
-                                        class="fa-regular fa-map icon" style="color: #f8f9fa"></i></a></p>
+                                <p class="text-starbucks-gold">MAP: <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                   data-location="{{ cafe.location }}">
+                                    <i class="font-weight-bold fa-regular fa-map icon"
+                                       style="color: #F7F6F4"
+                                       data-location="{{ cafe.location }}"></i>
+                                </a>
+                                </p>
                                 <p><span class="text-starbucks-gold">LOCATION:</span> {{ cafe.location }}</p>
+                                {% if cafe.seats %}
                                 <p><span class="text-starbucks-gold">SEATS:</span> {{ cafe.seats }}</p>
+                                {% else %}<br>
+                                {% endif %}
+                                {% if cafe.coffee_price %}
                                 <p><span class="text-starbucks-gold">PRICE:</span> {{ cafe.coffee_price }}</p>
+                                {% else %}<br>
+                                {% endif %}
                             </div>
                         </div>
                         <br>
@@ -61,7 +72,6 @@
                     <th scope="col">Name</th>
                     <th scope="col">Rating</th>
                     <th scope="col">Map</th>
-                    <th scope="col">Location</th>
                     <th scope="col">Seats</th>
                     <th scope="col">Price</th>
                     <th scope="col">Edit</th>
@@ -84,12 +94,12 @@
                     <td>{{ cafe.name | default('N/A', true) }}</td>
                     <td>{{ cafe.rating | default('N/A', true) }}</td>
                     <td>
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                           data-location="{{ cafe.location }}">
                             <i class="font-weight-bold fa-regular fa-map icon"
-                                data-location="{{ cafe.location }}"></i>
+                               data-location="{{ cafe.location }}"></i>
                         </a>
                     </td>
-                    <td>{{ cafe.location }}</td>
                     <td>{{ cafe.seats | default('N/A', true) }}</td>
                     <td>{{ cafe.coffee_price | default('N/A', true) }}</td>
                     <td><a data-bs-toggle="collapse"

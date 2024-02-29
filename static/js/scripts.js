@@ -169,3 +169,30 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleButton.textContent = 'Show List';
     });
 });
+//find my location - index.html form section - location
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('findLocation').addEventListener('click', function(event) {
+        event.preventDefault();
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+
+                // Replace 'YOUR_API_KEY' with your actual Google Maps API key
+                fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=YOUR_API_KEY`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'OK') {
+                            const address = data.results[0].formatted_address;
+                            document.getElementById('location').value = address;
+                        } else {
+                            console.error('Geocoding failed:', data.status);
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            });
+        } else {
+            alert('Geolocation is not supported by this browser.');
+        }
+    });
+});

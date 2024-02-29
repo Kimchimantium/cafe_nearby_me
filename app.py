@@ -10,10 +10,9 @@ from geocode import GetGeo
 from pprint import pprint
 
 # TODO
-# CSRF token
-# revise CSS ✓
-# mycafes.html: table collapse button js configuration ✓
-# add .gitignore ✓
+# mycafes.html: move location in table to modal
+# index.html: "near-me" button
+# mycafes.html: improve carousel
 
 
 # ===== App Setting =====
@@ -53,7 +52,7 @@ class CafeForm(FlaskForm):
                                 ('gas_Station', 'Gas Station'), ('supermarket', 'Supermarket')],
                        render_kw={'class': 'form-control'})
     keyword = StringField(label="Place Keyword",
-                          default='메가커피',
+                          default='스타벅스',
                           render_kw={"placeholder": 'Keyword of the Place',
                                      'class': 'form-control'})
     radius = IntegerField(label='Radius in m²',
