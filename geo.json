@@ -21105,5 +21105,472 @@
             }
         ],
         "status": "OK"
+    },
+    {
+        "results": [
+            {
+                "address_components": [
+                    {
+                        "long_name": "101\ud638",
+                        "short_name": "101\ud638",
+                        "types": [
+                            "subpremise"
+                        ]
+                    },
+                    {
+                        "long_name": "81-13",
+                        "short_name": "81-13",
+                        "types": [
+                            "premise"
+                        ]
+                    },
+                    {
+                        "long_name": "Jeongja-dong",
+                        "short_name": "Jeongja-dong",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_2"
+                        ]
+                    },
+                    {
+                        "long_name": "Bundang-gu",
+                        "short_name": "Bundang-gu",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_1"
+                        ]
+                    },
+                    {
+                        "long_name": "Seongnam-si",
+                        "short_name": "Seongnam-si",
+                        "types": [
+                            "locality",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Gyeonggi-do",
+                        "short_name": "Gyeonggi-do",
+                        "types": [
+                            "administrative_area_level_1",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "South Korea",
+                        "short_name": "KR",
+                        "types": [
+                            "country",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "13610",
+                        "short_name": "13610",
+                        "types": [
+                            "postal_code"
+                        ]
+                    }
+                ],
+                "formatted_address": "101\ud638, 81-13 Jeongja-dong, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3698359,
+                        "lng": 127.1110277
+                    },
+                    "location_type": "ROOFTOP",
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.3711848802915,
+                            "lng": 127.1123766802915
+                        },
+                        "southwest": {
+                            "lat": 37.3684869197085,
+                            "lng": 127.1096787197085
+                        }
+                    }
+                },
+                "partial_match": true,
+                "place_id": "Ek0xMDHtmLgsIDgxLTEzIEplb25namEtZG9uZywgQnVuZGFuZy1ndSwgU2VvbmduYW0tc2ksIEd5ZW9uZ2dpLWRvLCBTb3V0aCBLb3JlYSIiGiAKFgoUChIJ8YYVojBYezURWSd2u4gsLiQSBjEwMe2YuA",
+                "types": [
+                    "subpremise"
+                ]
+            }
+        ],
+        "status": "OK"
+    },
+    {
+        "results": [
+            {
+                "address_components": [
+                    {
+                        "long_name": "101\ud638",
+                        "short_name": "101\ud638",
+                        "types": [
+                            "subpremise"
+                        ]
+                    },
+                    {
+                        "long_name": "81-13",
+                        "short_name": "81-13",
+                        "types": [
+                            "premise"
+                        ]
+                    },
+                    {
+                        "long_name": "Jeongja-dong",
+                        "short_name": "Jeongja-dong",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_2"
+                        ]
+                    },
+                    {
+                        "long_name": "Bundang-gu",
+                        "short_name": "Bundang-gu",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_1"
+                        ]
+                    },
+                    {
+                        "long_name": "Seongnam-si",
+                        "short_name": "Seongnam-si",
+                        "types": [
+                            "locality",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Gyeonggi-do",
+                        "short_name": "Gyeonggi-do",
+                        "types": [
+                            "administrative_area_level_1",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "South Korea",
+                        "short_name": "KR",
+                        "types": [
+                            "country",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "13610",
+                        "short_name": "13610",
+                        "types": [
+                            "postal_code"
+                        ]
+                    }
+                ],
+                "formatted_address": "101\ud638, 81-13 Jeongja-dong, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3698359,
+                        "lng": 127.1110277
+                    },
+                    "location_type": "ROOFTOP",
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.3711848802915,
+                            "lng": 127.1123766802915
+                        },
+                        "southwest": {
+                            "lat": 37.3684869197085,
+                            "lng": 127.1096787197085
+                        }
+                    }
+                },
+                "partial_match": true,
+                "place_id": "Ek0xMDHtmLgsIDgxLTEzIEplb25namEtZG9uZywgQnVuZGFuZy1ndSwgU2VvbmduYW0tc2ksIEd5ZW9uZ2dpLWRvLCBTb3V0aCBLb3JlYSIiGiAKFgoUChIJ8YYVojBYezURWSd2u4gsLiQSBjEwMe2YuA",
+                "types": [
+                    "subpremise"
+                ]
+            }
+        ],
+        "status": "OK"
+    },
+    {
+        "results": [
+            {
+                "address_components": [
+                    {
+                        "long_name": "101\ud638",
+                        "short_name": "101\ud638",
+                        "types": [
+                            "subpremise"
+                        ]
+                    },
+                    {
+                        "long_name": "81-13",
+                        "short_name": "81-13",
+                        "types": [
+                            "premise"
+                        ]
+                    },
+                    {
+                        "long_name": "Jeongja-dong",
+                        "short_name": "Jeongja-dong",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_2"
+                        ]
+                    },
+                    {
+                        "long_name": "Bundang-gu",
+                        "short_name": "Bundang-gu",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_1"
+                        ]
+                    },
+                    {
+                        "long_name": "Seongnam-si",
+                        "short_name": "Seongnam-si",
+                        "types": [
+                            "locality",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Gyeonggi-do",
+                        "short_name": "Gyeonggi-do",
+                        "types": [
+                            "administrative_area_level_1",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "South Korea",
+                        "short_name": "KR",
+                        "types": [
+                            "country",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "13610",
+                        "short_name": "13610",
+                        "types": [
+                            "postal_code"
+                        ]
+                    }
+                ],
+                "formatted_address": "101\ud638, 81-13 Jeongja-dong, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3698359,
+                        "lng": 127.1110277
+                    },
+                    "location_type": "ROOFTOP",
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.3711848802915,
+                            "lng": 127.1123766802915
+                        },
+                        "southwest": {
+                            "lat": 37.3684869197085,
+                            "lng": 127.1096787197085
+                        }
+                    }
+                },
+                "partial_match": true,
+                "place_id": "Ek0xMDHtmLgsIDgxLTEzIEplb25namEtZG9uZywgQnVuZGFuZy1ndSwgU2VvbmduYW0tc2ksIEd5ZW9uZ2dpLWRvLCBTb3V0aCBLb3JlYSIiGiAKFgoUChIJ8YYVojBYezURWSd2u4gsLiQSBjEwMe2YuA",
+                "types": [
+                    "subpremise"
+                ]
+            }
+        ],
+        "status": "OK"
+    },
+    {
+        "results": [
+            {
+                "address_components": [
+                    {
+                        "long_name": "81-12",
+                        "short_name": "81-12",
+                        "types": [
+                            "premise"
+                        ]
+                    },
+                    {
+                        "long_name": "Jeongja-dong",
+                        "short_name": "Jeongja-dong",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_2"
+                        ]
+                    },
+                    {
+                        "long_name": "Bundang-gu",
+                        "short_name": "Bundang-gu",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_1"
+                        ]
+                    },
+                    {
+                        "long_name": "Seongnam-si",
+                        "short_name": "Seongnam-si",
+                        "types": [
+                            "locality",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Gyeonggi-do",
+                        "short_name": "Gyeonggi-do",
+                        "types": [
+                            "administrative_area_level_1",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "South Korea",
+                        "short_name": "KR",
+                        "types": [
+                            "country",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "13610",
+                        "short_name": "13610",
+                        "types": [
+                            "postal_code"
+                        ]
+                    }
+                ],
+                "formatted_address": "81-12 Jeongja-dong, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3698363,
+                        "lng": 127.1111729
+                    },
+                    "location_type": "ROOFTOP",
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.3711852802915,
+                            "lng": 127.1125218802915
+                        },
+                        "southwest": {
+                            "lat": 37.3684873197085,
+                            "lng": 127.1098239197085
+                        }
+                    }
+                },
+                "place_id": "ChIJaW-wmDBYezURGRIVPyFHuCM",
+                "plus_code": {
+                    "compound_code": "9496+WF Seongnam-si, Gyeonggi-do, South Korea",
+                    "global_code": "8Q999496+WF"
+                },
+                "types": [
+                    "street_address"
+                ]
+            }
+        ],
+        "status": "OK"
+    },
+    {
+        "results": [
+            {
+                "address_components": [
+                    {
+                        "long_name": "81-12",
+                        "short_name": "81-12",
+                        "types": [
+                            "premise"
+                        ]
+                    },
+                    {
+                        "long_name": "Jeongja-dong",
+                        "short_name": "Jeongja-dong",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_2"
+                        ]
+                    },
+                    {
+                        "long_name": "Bundang-gu",
+                        "short_name": "Bundang-gu",
+                        "types": [
+                            "political",
+                            "sublocality",
+                            "sublocality_level_1"
+                        ]
+                    },
+                    {
+                        "long_name": "Seongnam-si",
+                        "short_name": "Seongnam-si",
+                        "types": [
+                            "locality",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Gyeonggi-do",
+                        "short_name": "Gyeonggi-do",
+                        "types": [
+                            "administrative_area_level_1",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "South Korea",
+                        "short_name": "KR",
+                        "types": [
+                            "country",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "13610",
+                        "short_name": "13610",
+                        "types": [
+                            "postal_code"
+                        ]
+                    }
+                ],
+                "formatted_address": "81-12 Jeongja-dong, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea",
+                "geometry": {
+                    "location": {
+                        "lat": 37.3698363,
+                        "lng": 127.1111729
+                    },
+                    "location_type": "ROOFTOP",
+                    "viewport": {
+                        "northeast": {
+                            "lat": 37.3711852802915,
+                            "lng": 127.1125218802915
+                        },
+                        "southwest": {
+                            "lat": 37.3684873197085,
+                            "lng": 127.1098239197085
+                        }
+                    }
+                },
+                "place_id": "ChIJaW-wmDBYezURGRIVPyFHuCM",
+                "plus_code": {
+                    "compound_code": "9496+WF Seongnam-si, Gyeonggi-do, South Korea",
+                    "global_code": "8Q999496+WF"
+                },
+                "types": [
+                    "street_address"
+                ]
+            }
+        ],
+        "status": "OK"
     }
 ]

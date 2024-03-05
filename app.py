@@ -14,7 +14,6 @@ from pprint import pprint
 # index.html: "near-me" button
 # mycafes.html: improve carousel
 
-
 # ===== App Setting =====
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///cafes.db"
@@ -76,6 +75,7 @@ def create_db():
 @app.route('/', methods=['GET', 'POST'])
 def home():
     key = os.getenv('GOOGLE_API_KEY')
+    print(key)
     # Flask Form
     form = CafeForm()
     location, result, json_received = None, [], False
@@ -184,4 +184,4 @@ def info():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8370)
